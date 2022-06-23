@@ -1,11 +1,15 @@
   /* todas as animação */
  div.inicial{
-     background-color:white;
+     background-color: none;
      margin-top: -90px;
+     position: absolute;
+     top: 65%;
+     left: 2%;
+
  }
  div.inicial h1{
     -webkit-text-stroke: .5vh #0000;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -28,7 +32,7 @@
  div.continuar{
     display: inline-flex;
     position: absolute;
-    top: 480px;
+    top: 680px;
     left: 40px;
 
 }
@@ -36,9 +40,9 @@ div.continuar .estatico{
     color: blue;
     font-size: 5vh;
     font-family: verdana;
-
-    font-size: 25px;
     font-weight: 400px;
+    margin-top: -10px;
+    margin-left: -23px;
 }
 div .continuar#denamico{
     margin-left: 10px;
@@ -90,13 +94,14 @@ div .continuar#denamico{
 /* configuração de email */
  div.entrardos{
      display: table-cell;
-     float: left;
+     float: right;
      margin-top: -10%;
  }
  div.todosnome{
      display: table-cell;
+     width: 300px;
+     height: 90px;
      margin-left: 20px;
-     justify-content: center;
      border-radius: 5%;
      box-shadow: 1px 1px 4px black;
  }
@@ -138,23 +143,25 @@ div .continuar#denamico{
      color: white;
      border-radius: 8px;
  }
- div.Naotenho p{
-     font-family: Verdana, sans-serif;
+ div.Naotenho,#conta{
+     font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-weight: 900;
+    text-align: center;
  }
- div.Naotenho, p a{
-    margin: 20px;
-    font-family: Verdana, sans-serif;
+ div.Naotenho,#cadastra{
+    
     list-style: none;
     text-align: center;
 }
 div.entrardos p{
     font-family: Arial, Helvetica, sans-serif, #000000;
-    font-weight: 900;
-    text-align: center;
+    font-size: min(50px, 2,5vw);
+     margin-left: -30px;
 }
 div.entrardos h3{
     color: rgb(19, 248, 19);
-    text-align: center;
+    text-align: left;
 }
 /* configurações barra de pesquisa */
 .search-box{
@@ -381,12 +388,7 @@ div.audeo h2{
 }
 
 /* todos os textos com estilos */
- h1.titulo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px;
-    line-height: 50px;
-    text-align: right;
-}
+ 
 h2.subtitulo{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -396,6 +398,7 @@ h2.subtitulo{
     top: 50%;
 }
 h3.nossa-loja{
+    color: #00a8ff;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 margin-top: 20px;
 padding: 30px;
@@ -405,28 +408,34 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 margin: 20px;
 }
 div.paragraum{
+    width: 350px;
     display: table-cell;
     float: left;
+    margin-top: 20px;
+    margin: auto;
+    padding: 10px;
 }
-div.paragraum h1{
+div.paragraum h2{
     color: #00a8ff;
     font-family: Verdana;
+    text-align: center;
     font-size: 20px;
-    margin-top: -15px;
-    float: left;
+    margin-top: 55px;
+   
 }
 div.paragraum p{
+    text-align: justify;
     font-family: Verdana;
-    font-weight: 900;
     text-indent: 30px;
 }
 div.paragradois{
     display: table-cell;
 }
 div.paragradois p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Arial Narrow Bold', sans-serif;
     text-align: justify;
-    line-height: 10px;
+    padding-bottom: 10px;
+ 
 }
 div.paragradois h2{
     color: #00a8ff;
@@ -461,8 +470,9 @@ div.imagentransferir img{
 }
 /* mudagem de imagens */
 div#slaide{
+    background-color: #00a8ff;
     max-width: 345px;
-    margin: 0px auto;
+    margin: auto;
 }
 div#slaide img{
     max-width: 100%;
@@ -532,7 +542,7 @@ nav#menu ul{
     list-style: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position:relative;
-    top: -10px;
+    top: -0px;
     left: -38px;
 }
 nav#menu li{
@@ -558,7 +568,7 @@ nav#menu ul li{
 }
 nav#menu ul ul li{
     background-color: rgba(0, 0, 0, 0.527);
-    width: 250px;
+    width: 240px;
     padding: 5px;
     font-size: 14px;
     font-family: Verdana,sans-serif;
@@ -614,30 +624,33 @@ body{
 header{
     background-color: white;
     text-justify: newspaper;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 10px 0px 10px;
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
 section{
     background-color: white;
     text-justify: newspaper;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 10px 0px 10px;
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
 div.imagenfundo{
-    background-color: blue;
-    background-image: url("../imagens/Oppo-MagVOOC-3.webp");
-    background-position: center;
+    background-image: url(..//imagens/Oppo-MagVOOC-3.webp);
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    border: 1px solid white;
+    background-attachment: fixed;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
 }
 div#rola{
     align-items: center;
     position:absolute;
-    left: 78%;
-    top: 68%;
+    left: 66%;
+    top: 100%;
 }
 div#rola h5{
     background-color:white;
@@ -667,7 +680,7 @@ footer{
      min-height: 250px;
      background: #00a8ff;
      display: flex;
-     margin: 0px 50px 0px 50px;
+     margin: 0px 10px 0px 10px;
      box-shadow: 1px 1px 4px black;
 } 
 footer .boxs{
@@ -720,7 +733,7 @@ footer .boxs:nth-child(5){
     align-items: center;
     background: rgb(4, 4, 153);
     padding: 0px 20px;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 10px 0px 10px;
     box-shadow: 1px 1px 4px black;
 }
 .footer h2{
@@ -789,56 +802,25 @@ div .fault{
 aside{
     background-color: white;
     text-justify: newspaper;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 10px 0px 10px;
     padding: 5px;
     box-shadow: 1px 1px 4px black;
-}
-div .fault img{
-    margin-left: 20px;
-    border: 1px solid green;
-    box-shadow: 1px 1px 4px black;
-}
-.painel p{
-    font-family: Verdana;
-    margin: 20px;
-    text-indent: 30px;
-    line-height: 20px;
-    text-align: justify;
- } 
-.painel a{
+} 
+ .painel a{
     color: rgb(9, 36, 192);
     font-size: 12pt;
 }
-.fluxo{
-    margin: 20px;
-    box-shadow: 1px 1px 4px black;
-    border: solid aqua;
-}
-.fluxo h4{
-    background: rgb(26, 241, 26);
-    font-size: 2vw;
-    text-align: center;
-    color: white;
-    border-radius: 10px 10px 0px 0px;
-}
-.fluxo a{
-    color: rgb(219, 214, 214);
-    font-size: 1vw;
-}
-.fluxo img{
-   margin-left: 20px;
-    border: 1px solid green;
-    box-shadow: 1px 1px 4px black;
- }
+
  div.flutuar{
      display: table;
      float: left;
  }
  div.software h1{
      color: red;
-     font-family: Verdana, Tahoma, sans-serif;
-     font-weight: 900;
-     margin: 20px;
+     font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+    font-weight: 900;
+     font-size: min(20px, 1.5rem);
  }
 /* cadastramento*/
  
