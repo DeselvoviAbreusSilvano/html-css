@@ -818,6 +818,9 @@ div.fault img{
      display: table;
      float: left;
  }
+ div.todofluxo img{
+    width: 280px;
+ }
  div.software h1{
      color: red;
      font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
