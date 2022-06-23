@@ -417,19 +417,16 @@ div.paragraum h1{
 }
 div.paragraum p{
     font-family: Verdana;
-    font-size: min(12px, 1.2rem);
     font-weight: 900;
     text-indent: 30px;
 }
 div.paragradois{
     display: table-cell;
-    box-shadow: 1px 1px 4px #00a8ff;
 }
 div.paragradois p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: justify;
-    text-indent: 30px;
-    line-height: 30px;
+    line-height: 10px;
 }
 div.paragradois h2{
     color: #00a8ff;
@@ -512,31 +509,21 @@ div.textosum h1{
 div.textosum p{
     font-family: Verdana;
     text-indent: 50px;
-    font-size: max(10px 1.5rem);
-}
-div.textowuawei{
-   display: table;
-}
-div.wuawei{
-   display: table-cell;
 }
 div.paragrafowuawei h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #00a8ff;
+    text-align: center;
 }
-div.wuawei img{
-    border: 2px solid #00a8ff;
-    box-shadow: 1px 1px 5px black;
-}
-div.textowuawei p{
-    font-family: Verdana;
-    line-height: 20px;
-}
+
 div.paragrafowuawei{
-   display: table-cell;
-   float: left;
-   margin-top: -20px;
-   margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 20px;
+    font-weight: 100;
+    text-indent: 20px;
 }
+
 /* todas configuração do menu */
 nav#menu{
     display: block;
