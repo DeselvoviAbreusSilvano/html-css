@@ -811,6 +811,9 @@ aside{
     font-size: 12pt;
 }
 
+div.fault img{
+    width: 200px;
+}
  div.flutuar{
      display: table;
      float: left;
