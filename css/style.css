@@ -94,9 +94,6 @@ div .continuar#denamico{
      margin-top: -10%;
  }
  div.todosnome{
-     
-     width: 300px;
-     height: 200px;
      display: table-cell;
      margin-left: 20px;
      justify-content: center;
@@ -250,8 +247,7 @@ div#produtolojas{
    padding: 20px;
 }
 div#produtolojas .cartao .image{
-   height: 140px;
-   width: 140px;
+   
    border-radius: 50%;
    padding: 3px;
    background:white;
@@ -422,7 +418,6 @@ div.paragraum h1{
 div.paragraum p{
     font-family: Verdana;
     font-size: min(12px, 1.2rem);
-    width: 400px;
     font-weight: 900;
     text-indent: 30px;
 }
@@ -492,7 +487,6 @@ div.textos h3{
     
 }
 div.textos p{
-    width: 350px;
     font-size: max( 10px, 1rem);
     font-family: Verdana;
     text-indent: 30px;
@@ -516,7 +510,6 @@ div.textosum h1{
     text-align: center;
 }
 div.textosum p{
-    width: 350px;
     font-family: Verdana;
     text-indent: 50px;
     font-size: max(10px 1.5rem);
@@ -634,14 +627,14 @@ body{
 header{
     background-color: white;
     text-justify: newspaper;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 50px 0px 50px;
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
 section{
     background-color: white;
     text-justify: newspaper;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 50px 0px 50px;
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
@@ -687,7 +680,7 @@ footer{
      min-height: 250px;
      background: #00a8ff;
      display: flex;
-     margin: 0px 30px 0px 30px;
+     margin: 0px 50px 0px 50px;
      box-shadow: 1px 1px 4px black;
 } 
 footer .boxs{
@@ -740,7 +733,7 @@ footer .boxs:nth-child(5){
     align-items: center;
     background: rgb(4, 4, 153);
     padding: 0px 20px;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 50px 0px 50px;
     box-shadow: 1px 1px 4px black;
 }
 .footer h2{
@@ -786,7 +779,6 @@ footer .boxs:nth-child(5){
     
 }
 div.textousb{
-    width: 350px;
     display: table-cell;
     float: left;
     margin-left: 10px;
@@ -810,7 +802,7 @@ div .fault{
 aside{
     background-color: white;
     text-justify: newspaper;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 50px 0px 50px;
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
@@ -820,7 +812,6 @@ div .fault img{
     box-shadow: 1px 1px 4px black;
 }
 .painel p{
-    width: 250px;
     font-family: Verdana;
     margin: 20px;
     text-indent: 30px;
@@ -838,7 +829,6 @@ div .fault img{
 }
 .fluxo h4{
     background: rgb(26, 241, 26);
-    width: 380px;
     font-size: 2vw;
     text-align: center;
     color: white;
