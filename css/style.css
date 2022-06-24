@@ -32,13 +32,13 @@
  div.continuar{
     display: inline-flex;
     position: absolute;
-    top: 680px;
+    top: 600px;
     left: 40px;
 
 }
 div.continuar .estatico{
     color: blue;
-    font-size: 5vh;
+    font-size: 2rem;
     font-family: verdana;
     font-weight: 400px;
     margin-top: -10px;
@@ -54,16 +54,16 @@ div .continuar#denamico{
     color: rgb(24, 243, 24);
     list-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
-    left: 0;
     position: relative;
-    top: 0;
-    animation: solide 6s steps(5) infinite;
+    top: 30px;
+    left: -60px;
+    animation: solide 2s steps(5) infinite;
 }
 @keyframes slide{
     100%{
-        top: -30px;
+        top: -50px;
     }
 }
 #denamico li span{
@@ -89,80 +89,105 @@ div .continuar#denamico{
         margin: 0 -35px 0 35px;
     }
 }
-
-
-/* configuração de email */
- div.entrardos{
-     display: table-cell;
-     float: right;
-     margin-top: -10%;
- }
- div.todosnome{
-     display: table-cell;
-     width: 300px;
-     height: 90px;
-     margin-left: 20px;
-     border-radius: 5%;
-     box-shadow: 1px 1px 4px black;
- }
- div.todosnome h1{
-     color: green;
-     text-align: center;
-     font-family: Arial, sans-serif;
-     font-size: 20px;
-     font-weight: 900;
- }
- div.entranome{
-     border: none;
-     outline: none;
-     padding: 10px;
-     margin: 10px;
-
- }
- div.entranome input{
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid green;
-    background-color: transparent;
-    outline: none;
-        font-size: 16px;
-        transition: all .3s ease-out;
-        border-radius: 0;
- }
- div.botãoentrar{
-     background-color: transparent;
-     padding: 10px;
-     margin: 10px;
-     cursor: pointer;
-     transition: all .3s ease-out;
- }
- div.botãoentrar button:hover{
-     background-color: rgb(13, 240, 13);
-     color: white;
-     border-radius: 8px;
- }
- div.Naotenho,#conta{
-     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+/* todas configuração de textos da section */
+div.todotextos{
+    display: table;
+}
+div.textos{
+    display: table-cell;
+    float: left;
+    padding: 10px;
+}
+div.textos h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #00a8ff;
+    font-size: 17px;
     font-weight: 900;
+    margin-bottom: 20px;
+}
+
+
+div.imagentransferir img{
+   display: table-cell;
+   margin: 50px;
+   box-shadow: 1px 1px 4px #cccccc;
+}
+div.versão p{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: justify;
+text-indent: 30px;
+width: 300px;
+margin: 10px;
+}
+div.textosum{
+    display: table-cell;
+    float: left;
+    padding: 10px;
+}
+div.textosum h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #00a8ff;
+    font-size: 17px;
+    font-weight: 900;
+}
+div.imagensmat img{
+     display: table-cell;
+     margin: 20px;
+     box-shadow: 1px 1px 4px #00a8ff;
+}
+div.googleplay p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+    width: 300px;
+    margin: 10px;
+}
+
+div.googleplay, #partil{
+    margin: 20px;
+}
+
+div.textowuawei{
+    display: table-cell;
+    float: right;
+    border-left: 1px solid #444;
+    margin-top: -0%;
+}
+
+div.wuawei img{
+    width: 250px;
+    display: table-cell;
+    margin: 30px;
+    box-shadow: 1px 1px 4px #cccccc;
+}
+
+div.paragrafowuawei p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    width: 300px;
+    margin: 10px;
+    text-indent: 30px;
+    line-height: 30px;
+}
+div.paragrafowuawei h2{
+    color: #00a8ff;
+    font-family: Verdana;
     text-align: center;
- }
- div.Naotenho,#cadastra{
-    
-    list-style: none;
-    text-align: center;
+    font-size: 13px;
 }
-div.entrardos p{
-    font-family: Arial, Helvetica, sans-serif, #000000;
-    font-size: min(50px, 2,5vw);
-     margin-left: -30px;
+div.texto-publicidade #publici{
+    width: 250px;
+    margin: 20px;
+    box-shadow: 1px 1px 4px red;
 }
-div.entrardos h3{
-    color: rgb(19, 248, 19);
-    text-align: left;
+div.texto-publicidade h2,h3{
+    color: blue;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+
 }
+
 /* configurações barra de pesquisa */
 .search-box{
    position:absolute;
@@ -206,335 +231,8 @@ div.entrardos h3{
 .search-box:hover >.search-btn{
    background: white;
 }
-/* Meus contiudos nossa loja */
-div.textosnovi h1{
-    color: rgb(10, 238, 10);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 900;
- }
- div.textosnovi h4{
-    color: red;
-    font-family: Arial, Helvetica, sans-seri;
-    font-size: 12px;
-    font-weight: 900;
- }
- div.novi h3{
-    background-color: #00a8ff;
-    width: 280px;
-    color: green;
-    text-align: center;
-    font-family: verdana;
-    font-weight: 900;
-    display: flex;
- }
- div.tabelas-principal, table{
-    width: 70%;
-    height: 10px;
-    border: 2px solid blue;
- }
- 
-div.lojastodos{
-   background: #00a8ff;
-   box-shadow: 1px 1px 4px black;
-}
-div#produtolojasdois{
-  display: flex;
-  float: right;
-  margin-left: 50%;
-}
-div.produtolojastres{
-   display: flex;
-   align-items: center;
- 
-}
-div#produtolojas{
-   display: flex;
-   margin-left: 20px;
-   padding: 20px;
-}
-div#produtolojas .cartao .image{
-   
-   border-radius: 50%;
-   padding: 3px;
-   background:white;
-   border: 2px solid green;
-}
-div#produtolojastres .cartao .image{
-   height: 140px;
-   width: 140px;
-   border-radius: 50%;
-   padding: 3px;
-   background:white;
-   border: 2px solid green;
-}
-div.produtolojastres .cartao .image{
-   height: 140px;
-   width: 140px;
-   border-radius: 50%;
-   padding: 3px;
-   background:white;
-   border: 2px solid green;
-}
 
-div.image img{
-   margin-left: 40px;
-   margin-top: 20px;
-       object-fit: cover;
-       border: 1px solid white;
-}
-.cartao{
-   position: relative;
-   background-color: white;
-   border-radius: 20px;
-   margin: 20px 0;
-   width: 240px;
-   box-shadow: 1px 1px 4px black;
-
-}
-.cartao::before{
-   content:"";
-   position: absolute;
-   height: 40%;
-   width: 100%;
-   background: rgb(9, 245, 9);
-   border-radius: 20px 20px 0px 0px;
-}
-.cartao .cartao-conect{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 30px;
-   position: relative;
-   z-index: 100;
-}
-.cartao .media{
-   position: absolute;
-   top: 10px;
-   right: 8px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.cartao .media img{
-   color: white;
-   opacity: 0.6;
-   margin-top: 10px;
-   transition: all 0.3s ease;
-   cursor: pointer;
-}
-.cartao .media img:hover{
-   opacity: 1;
-}
-.cartao .nome-prifeçao{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 10px;
-   color: blue;
-}
-div.nome-prifeçao .nome{
-   font-size: 20px;
-   font-weight: 600;
-}
-div.nome-prifeçao .professor{
-   font-size: 20px;
-   font-weight: 500;
-}
-div.cartao .marcas{
-   display: flex;
-   align-items: center;
-   margin-top: 18px;
-}
-div.cartao .marcas img{
-   box-shadow: 1px 1px 4px black;
-}
-div.cartao .button{
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-   margin-top: 20px;
-}
-div.cartao .button button{
-   background: rgb(13, 238, 13);
-   outline: none;
-   border: none;
-   color: white;
-   padding: 8px 20px;
-   border-radius: 20px;
-   font-size: 14px;
-   transition: all 0.3s ease;
-   cursor: pointer;
-}
-div.button button:hover{
-   background-color: green;
-} 
-
-/* configuração das multimédias */
-div.audeo{
-    align-items: center;
-    justify-content: center;
-    margin: 10%;
-     
-}
-div.audeo h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 20px;
-    color: blue;
-
-
-
-}
-
-/* todos os textos com estilos */
- 
-h2.subtitulo{
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px;
-    font-size: 5rem;
-    position: absolute;
-    top: 50%;
-}
-h3.nossa-loja{
-    color: #00a8ff;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-margin-top: 20px;
-padding: 30px;
-}
-h3.Android{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-margin: 20px;
-}
-div.paragraum{
-    width: 350px;
-    display: table-cell;
-    float: left;
-    margin-top: 20px;
-    margin: auto;
-    padding: 10px;
-}
-div.paragraum h2{
-    color: #00a8ff;
-    font-family: Verdana;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 55px;
-   
-}
-div.paragraum p{
-    text-align: justify;
-    font-family: Verdana;
-    text-indent: 30px;
-}
-div.paragradois{
-    display: table-cell;
-}
-div.paragradois p{
-    font-family:'Arial Narrow Bold', sans-serif;
-    text-align: justify;
-    padding-bottom: 10px;
- 
-}
-div.paragradois h2{
-    color: #00a8ff;
-    font-family: Verdana;
-    font-weight: 900;
-    font-size: max(10px, 1.2rem);
-    margin: 5px;
-    text-align: center;
-}
-div.tabelaemail{
-    display: table-cell;
-    float: left;
-}
-div.textos-principal{
-    display: table;
-}
-div.tudoloja{
-    display: table-cell;
-    float: left;
-}
-div.textoloja{
-    float: left;
-}
-div.imagentransferir{
-    display: table-cell;
-    float: left;
-    margin: 10px;
-}
-div.imagentransferir img{
-    border: 1px solid #00a8ff;
-    box-shadow: 1px 1px 5px black;
-}
-/* mudagem de imagens */
-div#slaide{
-    max-width: 345px;
-    margin: auto;
-}
-div#slaide img{
-    max-width: 100%;
-    box-shadow: 1px 1px 1px 4px red;
-}
-div.textos{
-   display: table-cell;
-   float: left;
-   margin-left: 20px;
-   margin: 20px;
-   padding: 10px;
-}
-div.textos h3{
-    margin: 20px;
-    color: #00a8ff;
-    font-family: Verdana;
-    font-size: 2rem;
-    font-weight: 900;
-    
-}
-div.textos p{
-    font-size: max( 10px, 1rem);
-    font-family: Verdana;
-    text-indent: 30px;
-    text-align: justify;
-    line-height: 20px;
-}
-div.imagensmat{
-   display: table-cell;
-   float: left;
-   margin: 10px;
-}
-div.imagensmat img{
-    box-shadow: 1px 1px 5px #00a8ff;
-}
-div.textosum{
-   display: table-cell;
-   margin-left: 80px;
-}
-div.textosum h1{
-    color: #00a8ff;
-    text-align: center;
-}
-div.textosum p{
-    font-family: Verdana;
-    text-indent: 50px;
-}
-div.paragrafowuawei h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #00a8ff;
-    text-align: center;
-}
-
-div.paragrafowuawei{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    line-height: 20px;
-    font-weight: 100;
-    text-indent: 20px;
-}
-
-/* todas configuração do menu */
-nav#menu{
+ nav#menu{
     display: block;
 }
 nav#menu ul{
@@ -628,10 +326,10 @@ header{
     box-shadow: 1px 1px 4px black;
 }
 section{
+    display: flex;
+    min-height: 250px;
     background-color: white;
-    text-justify: newspaper;
     margin: 0px 10px 0px 10px;
-    padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
 div.imagenfundo{
@@ -648,7 +346,7 @@ div.imagenfundo{
 div#rola{
     align-items: center;
     position:absolute;
-    left: 66%;
+    left: 50%;
     top: 100%;
 }
 div#rola h5{
@@ -738,15 +436,9 @@ footer .boxs:nth-child(5){
 .footer h2{
     color: white;
 }
-.footer p{
-    color: white;
-    height: 20px;
-    margin-left: 50px;
-    align-items: center ;
-    font-size: 1.2rem;
-    font-family: Verdana,sans-serif;
-
-}
+ div.sociais, .desevolve{
+     color: green;
+ }
 .footer .sociais{
     display: flex;
 }
@@ -935,4 +627,80 @@ div.mensagSucess{
     padding: 10px;
     border-radius: 4px;
     display:none;
+}
+/* Receba novidade no seu email */
+div.todasentra{
+    display: inline-flex;
+    justify-content: right;
+    margin-top: -80%;
+    margin-left: -50px;
+    width: 100%;
+}
+div.recebas{
+    background-color: white;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 1px 1px 4px black;
+    width: 200px;
+}
+
+div.recebas h1{
+    text-align: center;
+    margin-bottom: 20px;
+            color: blue;
+}
+
+
+div.entrar{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+div.entrar input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+        font-size: 16px;
+        transition: all .3s ease-out;
+        border-radius: 0;
+}
+
+div.entrar label{
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+div.entrar, input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+div.entrar, input:focus + label,
+div.entrar, input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: blue;
+}
+div.Nãotens p{
+    color: #00a8ff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+}
+div.Nãotens li{
+    color: red;
+    list-style: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 900;
 }
