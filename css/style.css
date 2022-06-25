@@ -234,9 +234,10 @@ div.texto-publicidade h2,h3{
 
  nav#menu{
     display: block;
+    background-color: #00a8ff;
+    border-radius: 8px;
 }
 nav#menu ul{
-    background-color: #00a8ff;
     list-style: none;
     font-family: verdana;
     position:relative;
