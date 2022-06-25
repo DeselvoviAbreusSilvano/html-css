@@ -237,7 +237,7 @@ div.texto-publicidade h2,h3{
 }
 nav#menu ul{
     list-style: none;
-    font-family: verdana sans-serif;
+    font-family: verdana;
     position:relative;
     top: -0px;
     left: -38px;
@@ -254,7 +254,8 @@ nav#menu a{
       
 }
 nav#menu ul li{
-    background-color: #cccccc8e;
+    background-color: #;
+    border-radius: 8%;
     color: white;
     float: left;
     width: 115px;
