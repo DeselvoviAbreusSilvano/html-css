@@ -232,33 +232,33 @@ div.texto-publicidade h2,h3{
    background: white;
 }
 
- nav#menu{
-    display: block;
-    background-color: #00a8ff;
-    border-radius: 8px;
-}
 nav#menu ul{
     list-style: none;
-    font-family: verdana;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position:relative;
     top: -0px;
     left: -38px;
 }
 nav#menu li{
+
     display: inline-block;
+    background-color: #00a8ff;
     color: white;
-    padding: 0px;
+    padding: 5px;
+  
    
 }
 nav#menu a{
     text-decoration: none;
+    font-size: 3vh;
+    font-weight: 900;
 
       
 }
 nav#menu ul li{
+    width: 110px;
     color: white;
     float: left;
-    width: 115px;
     height: 40px;
     line-height: 40px;
     transition: all 1s;
@@ -266,6 +266,7 @@ nav#menu ul li{
 }
 nav#menu ul ul li{
     background-color: rgba(0, 0, 0, 0.527);
+    border-radius: none;
     width: 240px;
     padding: 5px;
     font-size: 14px;
@@ -527,7 +528,7 @@ div.cadastramentos{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;
+    height: 200px;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
