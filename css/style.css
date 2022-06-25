@@ -255,7 +255,6 @@ nav#menu a{
 }
 nav#menu ul li{
     background-color: blue;
-    border-radius: 8%;
     color: white;
     float: left;
     width: 115px;
