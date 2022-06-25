@@ -99,7 +99,7 @@ div.textos{
     padding: 10px;
 }
 div.textos h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: verdana;
     color: #00a8ff;
     font-size: 17px;
     font-weight: 900;
@@ -237,7 +237,7 @@ div.texto-publicidade h2,h3{
 }
 nav#menu ul{
     list-style: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: verdana sans-serif;
     position:relative;
     top: -0px;
     left: -38px;
