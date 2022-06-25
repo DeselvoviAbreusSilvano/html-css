@@ -242,7 +242,8 @@ nav#menu ul{
 nav#menu li{
 
     display: inline-block;
-    background-color: #00a8ff;
+    background-color: #1425c4;
+    width: 50px;
     color: white;
     padding: 5px;
   
