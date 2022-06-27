@@ -2,8 +2,8 @@
  div.inicial{
      margin-top: -90px;
      position: relative;
-     top: -270px;
-     left: -15%;
+     top: -200px;
+     left: -10%;
 
  }
  div.inicial h1{
@@ -148,7 +148,7 @@ div.googleplay, #partil{
 
 div.textowuawei{
     display: table-cell;
-    float: right;
+    float: left;
     border-left: 1px solid #444;
     margin-top: -0%;
 }
@@ -164,7 +164,7 @@ div.paragrafowuawei p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     width: 300px;
-    margin: 10px;
+    margin: 8px;
     text-indent: 30px;
     line-height: 30px;
 }
@@ -186,6 +186,64 @@ div.texto-publicidade h2,h3{
     font-weight: 600;
 
 }
+/* configuração para os meu produtos e ferramentas */
+div.conta-google{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 4px black;
+}
+
+div.ferramentas-google{
+    margin: 10px;
+    padding: 5px;
+}
+
+div.ferramneta-google, #todostemos{
+    box-shadow: 1px 1px 4px #00a8ff;
+}
+div.ferramneta-google, .ferramentas-marcas{
+    text-align: center;
+    background-color: #00a8ff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    list-style: none;
+    transition: all 0.2s;
+}
+div.ferramneta-google, .ferramentas-marcas:hover{
+    background-color: #1425c4;
+    color: white;
+}
+
+div.conta-google .ferramneta-titular{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    padding: 5px;
+    
+}
+div.clicklink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #091478;
+    border-radius: 10px;
+    width: 30%;
+    height: 40%;
+    transition: all 0.2s;
+}
+div.clicklink,.Maislink{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+div.clicklink,.Maislink:hover{
+    background-color: #070d47;
+    color:white;
+}
+
+
 
 /* configurações barra de pesquisa */
 .search-box{
@@ -248,7 +306,7 @@ div.search-box,::placeholder{
     list-style: none;
     position: absolute;
     top: -10px;
-    left: 53%;
+    left: 40%;
 }
 
 .menu-principal li{
@@ -356,6 +414,61 @@ header{
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
+/* Administrador */
+header .fundo-administra{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-height: 10px;
+    position: relative;
+    top: 180px;
+    left: 5;
+
+}
+header.cartão-adminstra,.imagen-administra{
+    width: 250px;
+    height: 380px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+}
+header.cartão-adminstra,.imagen-administra img#Administrador{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Configuraão da arias Admintrada */
+div.imagenfundo p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+}
+header figure.fotos-legenda{
+    text-align: center;
+    position: relative;
+}
+header figure.fotos-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0,.5);
+    border-radius: 100%;
+    color: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all 2s;
+}
+header figure.fotos-legenda figcaption h2,h3,h4{
+    padding: 5px;
+}
+header figure.fotos-legenda:hover > figcaption{
+    opacity: 1;
+}
+
 section{
     display: flex;
     min-height: 250px;
