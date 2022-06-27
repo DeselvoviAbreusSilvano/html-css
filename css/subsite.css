@@ -1,3 +1,33 @@
+   /* todas as animação */
+   div.inicial-titulo{
+      margin-top: -90px;
+      position: relative;
+      top: 20px;
+      left: -28%;
+ 
+  }
+  div.inicial-titulo h1{
+     -webkit-text-stroke: .5vh #0000;
+     font-size: 6vw;
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     background-image: url("../imagens/smartp.jfif");
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+     animation: text 10s ease alternate infinite;
+ }
+ @keyframes text {
+     form{
+         background-position: 0%, 50%;
+     }
+     to{
+         background-position: 100%, 50%;
+     }
+ }
+ 
+ 
  body{
     background-color: rgb(223, 217, 217);
     margin: 0px;
@@ -10,52 +40,40 @@ section{
     padding: 5px;
     box-shadow: 1px 1px 4px black;
 }
-section .animação{
-   -webkit-text-stroke: .5vh #0000;
-    font-size: 2vw;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    background-image: url("../imagens/smartp.jfif");
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: text 10s ease alternate infinite;
+
+  /* configuração de sub menu principal */
+.menu-principal{
+   display: block;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 14px;
+   font-weight: 900;
 }
-@keyframes text {
-    form{
-        background-position: 0%, 50%;
-    }
-    to{
-        background-position: 100%, 50%;
-    }
+
+.menu-principal ul{
+   list-style: none;
+   position: absolute;
+   top: -10px;
+   left: 53%;
 }
- nav#submenu{
-    background-color: #00a8ff;
-    margin-bottom: 10%;
-    font-size: 20px;
-    font-weight: 500;
-    font-family:Tahoma, Geneva, Verdana, sans-serif;
+
+.menu-principal li{
+   display: inline-block;
+   background-color: #cccc;
+   padding: 10px;
+   margin: 0px;
 }
-nav#submenu ul li{
-    background-color: #6da3f9;
-    color: white;
-    float: left;
-    width: 200px;
-    height: 40px;
-    display: inline-block;
-    line-height: 40px;
- }
- nav#submenu ul{
-    list-style: none;
-    position: absolute;
-    top: -20px;
-    left: -10px;
+.menu-principal a{
+   color: #444;
 }
-nav#submenu ul li:hover{
-    background-color: #0a91d4;
-    color: green;
+.menu-principal ul li{
+   float: left;
 }
+
+.menu-principal ul li:hover{
+  background-color: rgb(177, 174, 174);
+  color: green;
+}
+
 
  /* configuração footer */
  footer{
@@ -107,6 +125,11 @@ footer .boxs:nth-child(5){
        width: 100%;
    }
 }
+
+div.sociais,.desevolve{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: green;
+}
 /* redes sociais no footer */
 .footer{
    height: 95px;
@@ -119,16 +142,13 @@ footer .boxs:nth-child(5){
    box-shadow: 1px 1px 4px black;
 }
 .footer h2{
+   font-family: Verdana;
+   font-weight: 900;
    color: white;
 }
-.footer p{
-   color: white;
-   height: 20px;
-   margin-left: 50px;
-   align-items: center ;
-   font-size: 1.2rem;
-   font-family: Verdana,sans-serif;
-
+div.sociais, .desevolve{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
 }
 .footer .sociais{
    display: flex;
@@ -155,7 +175,8 @@ footer .boxs:nth-child(5){
    font-size: 1.5rem;
    transition: color .3s linear;
 }
-/* textos e imagens */
+
+ /* textos e imagens */
 div#textos{
     display: table;
 }
