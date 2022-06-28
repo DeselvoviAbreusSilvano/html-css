@@ -48,7 +48,7 @@ function entrar(){
     } 
 
 
-    if (localStorage.getItem('token') == null ) {
+    if (localStorage.getItem(token) == null ) {
         alert('você prescisa estar logado para acessar essa página')
         window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
