@@ -57,13 +57,15 @@ function entrar(){
 
     } 
 
-     
-    function sair() {
-       localStorage.removeItem('token') 
-       window.location.href="https://deselvoviabreussilvano.github.io/html-css/log.html"  
-    }
+
     if (localStorage.getItem('token') == null ) {
         alert('você prescisa estar logado para acessar essa página')
         window.location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
     
+     
+    function sair() {
+       localStorage.removeItem('token') 
+       window.location.href="https://deselvoviabreussilvano.github.io/html-css/log.html"  
+    }
+     
