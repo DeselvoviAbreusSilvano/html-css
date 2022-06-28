@@ -1,12 +1,12 @@
  let.btn = document.querySelector('.fa fa-eye')
 
 btn. addEventListener('click',() => {
-    let entraSenha = document.querySelector('#entraSenha')
+    let Senha = document.querySelector('#Senha')
 
-    if(inputentraSenha.getAttribute('type') =='password'){
-        inputentraSenha.setAttribute('type', 'text')
+    if(inputSenha.getAttribute('type') =='password'){
+        inputSenha.setAttribute('type', 'text')
     } else{
-        inputentraSenha.setAttribute('type', 'password')
+        Senha.setAttribute('type', 'password')
     }
 })
 
