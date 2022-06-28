@@ -38,7 +38,7 @@ function entrar(){
     })
     
     if (Usuario.value == uservalid.user && Senha.value == uservalid.senha ){
-        window.location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
+        window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
 
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token',token)
@@ -60,7 +60,7 @@ function entrar(){
 
     if (localStorage.getItem('token') == null ) {
         alert('você prescisa estar logado para acessar essa página')
-        window.location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
+        window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
     
      
