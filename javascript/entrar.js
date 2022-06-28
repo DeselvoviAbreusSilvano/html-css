@@ -55,3 +55,7 @@ function entrar(){
 
     }
  
+function sair() {
+    localStorage.removeItem('token') 
+    window.location.href ='https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html'   
+}
