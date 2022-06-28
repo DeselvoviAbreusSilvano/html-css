@@ -38,23 +38,31 @@ function entrar(){
     })
     
     if (Usuario.value == uservalid.user && Senha.value == uservalid.senha ){
-         window.location.href ='https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html'
-         
-         let token = Math.rendom().toString(16).substr(2) + Math.rendom().toString(16).substr(2)
-         localStorage.setItem('token',token)
-    } else {
-        tabelausuario.setAttribute('style', 'color: red')
-        Usuario.setAttribute('style', 'border-color: red')
-        tabelasenha.setAttribute('style', 'color: red')
-        Senha.setAttribute('style', 'border-color: red')
-        msgerror.setAttribute ('style','text-align: center;  border-radius: 8px;  background-color: red ; color: white;')
-        msgerror.innerHTML= 'Usuário ou senha inserida estão incorretos!'
+        window.location.href ='https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html'
 
-        Usuario.focus()
-    }
+        let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+        localStorage.setItem('token',token)
+        
+   } else {
+       tabelausuario.setAttribute('style', 'color: red')
+       Usuario.setAttribute('style', 'border-color: red')
+       tabelasenha.setAttribute('style', 'color: red')
+       Senha.setAttribute('style', 'border-color: red')
+       msgerror.setAttribute ('style','text-align: center;  border-radius: 8px;  background-color: red ; color: white;')
+       msgerror.innerHTML= 'Usuário ou senha inserida estão incorretos!'
 
-    }
+       Usuario.focus()
+   }
+
+
+    } 
  
+
+ if (localStorage.getItem('token') == null ) {
+     alert('você prescisa estar logado para acessar essa página')
+     window.location.href ='https://deselvoviabreussilvano.github.io/html-css/' 
+ }
+
 function sair() {
     localStorage.removeItem('token') 
     window.location.href ='https://deselvoviabreussilvano.github.io/html-css/'   

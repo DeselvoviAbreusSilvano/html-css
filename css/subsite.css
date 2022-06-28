@@ -26,8 +26,26 @@
          background-position: 100%, 50%;
      }
  }
- 
- 
+ /* Estou logado! */
+ #estou-logado{
+    color: red;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+ }
+ button#sair{
+    margin: 10px;
+    border-radius: 8px;
+    font-family: Verdana;
+    background-color: #00a8ff;
+    color: white;
+    transition: all 0.2s;
+ }
+ button#sair:hover{
+    background-color: blue;
+    color: red;
+ }
+
  body{
     background-color: rgb(223, 217, 217);
     margin: 0px;
