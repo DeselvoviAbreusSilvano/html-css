@@ -38,7 +38,7 @@ function entrar(){
     })
     
     if (Usuario.value == uservalid.user && Senha.value == uservalid.senha ){
-         window.location. href='https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html'
+         window.location.href ='https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html'
          
          let token = Math.rendom().toString(16).substr(2) + Math.rendom().toString(16).substr(2)
          localStorage.setItem('token',token)
