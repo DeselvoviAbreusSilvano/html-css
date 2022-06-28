@@ -56,6 +56,6 @@ function entrar(){
      
     function sair() {
        localStorage.removeItem('token') 
-       window.location.href="https://deselvoviabreussilvano.github.io/html-css/log.html"  
+       window.Location.href="https://deselvoviabreussilvano.github.io/html-css/log.html"  
     }
      
