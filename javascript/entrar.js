@@ -38,7 +38,7 @@ function entrar(){
     })
     
     if (Usuario.value == uservalid.user && Senha.value == uservalid.senha ){
-         
+         window.location.href ='https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html'
     } else {
         tabelausuario.setAttribute('style', 'color: red')
         Usuario.setAttribute('style', 'border-color: red')
