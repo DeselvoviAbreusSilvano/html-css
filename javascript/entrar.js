@@ -34,6 +34,8 @@ function entrar(){
 
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token',token)
+
+        localStorage.setItem('userLogado', JSON.stringify(uservalid))
         
     } else {
         
@@ -48,6 +50,13 @@ function entrar(){
     }
 
     }
+
+
+    let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+
+    let logado = document.querySelector('logado')
+    logado.innerHTML= `Olá ${userLogado.nome}`
+
     if(localStorage.getItem('token') == null){
         alert('Você precisa estar logado para acessar esta página')
         Window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
