@@ -63,5 +63,6 @@ function entrar(){
     }
     function sair(){
         localStorage.removeItem('token')
+        localStorage.removeItem('userLogado')
     Window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
