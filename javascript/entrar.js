@@ -1,6 +1,6 @@
  
 
-function entrar(){
+function Cadastrar (){
     let entrarUsuario = document.querySelector('#entrarUsuario')
     let usuario = document.querySelector('#usuario')
 
