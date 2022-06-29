@@ -9,6 +9,9 @@ let userlogado = JSON.parse(localStorage.getItem('userlogado'))
         window.location.href="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
     function sair(){
+        let entrarUsuario = document.querySelector('#entrarUsuario')
+        let usuario = document.querySelector('#usuario')
+    
         localStorage.removeItem('token')
         localStorage.removeItem('userLogado')
     window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
