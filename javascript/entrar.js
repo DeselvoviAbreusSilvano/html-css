@@ -16,7 +16,8 @@ function entrar(){
         senha:''
     }
     listaUser = JSON.parse(localStorage.getItem('listaUser'))
-    listaUser.forEach((item) =>{
+    listaUser.forEach((item) => {
+
         if (Usuario.value == item.userCad && Senha.value == item.senhaCad) {
             
             uservalid  ={
@@ -25,16 +26,18 @@ function entrar(){
                 senha: item.senhaCad
             }
         }
-    })
-    
-    if (Usuario.value == uservalid.user && Senha.value == uservalid.senha ){
-        window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
+    })        
 
+    if (Usuario.value == uservalid.user && Senha.value == uservalid.senha) {
+
+        window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
+        
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token',token)
         
-   } else {
-       tabelausuario.setAttribute('style', 'color: red')
+    } else {
+        
+        tabelausuario.setAttribute('style', 'color: red')
        Usuario.setAttribute('style', 'border-color: red')
        tabelasenha.setAttribute('style', 'color: red')
        Senha.setAttribute('style', 'border-color: red')
@@ -42,20 +45,7 @@ function entrar(){
        msgerror.innerHTML= 'Usuário ou senha inserida estão incorretos!'
 
        Usuario.focus()
-   }
-
-
-    } 
-
-
-    if (localStorage.getItem('token') == null ) {
-        alert('você prescisa estar logado para acessar essa página')
-        window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
-    
-     
-    function sair() {
-       localStorage.removeItem('token') 
-       window.Location.href="https://deselvoviabreussilvano.github.io/html-css/log.html"  
+
     }
-     
+ 
