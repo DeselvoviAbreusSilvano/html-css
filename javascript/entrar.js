@@ -1,11 +1,11 @@
  
 
 function entrar(){
-    let Usuario = document.querySelector('#Usuario')
-    let tabelausuario = document.querySelector('#tabelausuario')
+    let entrarUsuario = document.querySelector('#entrarUsuario')
+    let usuario = document.querySelector('#usuario')
 
-    let Senha = document.querySelector('#Senha')
-    let tabelasenha = document.querySelector('#tabelasenha')
+    let entrarSenha = document.querySelector('#entrarSenha')
+    let senha = document.querySelector('#senha')
 
     let msgerror = document.querySelector('#msgerror')
     let listaUser = []
@@ -18,7 +18,7 @@ function entrar(){
     listaUser = JSON.parse(localStorage.getItem('listaUser'))
     listaUser.forEach((item) => {
 
-        if (Usuario.value == item.userCad && Senha.value == item.senhaCad) {
+        if (entrarUsuario.value == item.userCad && entrarSenha.value == item.senhaCad) {
             
             uservalid  ={
                 nome: item.nomeCad,
@@ -28,9 +28,9 @@ function entrar(){
         }
     })        
 
-    if (Usuario.value == uservalid.user && Senha.value == uservalid.senha) {
+    if (entrarUsuario.value == uservalid.user && entrarSenha.value == uservalid.senha) {
 
-        Window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
+        window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
 
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token',token)
@@ -59,10 +59,10 @@ function entrar(){
 
     if(localStorage.getItem('token') == null){
         alert('Você precisa estar logado para acessar esta página')
-        Window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
+        window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
     function sair(){
         localStorage.removeItem('token')
         localStorage.removeItem('userLogado')
-    Window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
+    window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
     }
