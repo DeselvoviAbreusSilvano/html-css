@@ -29,13 +29,13 @@ function entrar(){
     })        
 
     if (entrarUsuario.value == uservalid.user && entrarSenha.value == uservalid.senha) {
+        console.log()
+       // window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
 
-        window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
+        //let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+        //localStorage.setItem('token',token)
 
-        let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
-        localStorage.setItem('token',token)
-
-        localStorage.setItem('userLogado', JSON.stringify(uservalid))
+        //localStorage.setItem('userLogado', JSON.stringify(uservalid))
         
     } else {
         
@@ -48,7 +48,7 @@ function entrar(){
 
        Usuario.focus()
     }
-
+    console.log(uservalid)
     }
 
 
