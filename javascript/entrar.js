@@ -29,40 +29,22 @@ function entrar(){
     })        
 
     if (entrarUsuario.value == uservalid.user && entrarSenha.value == uservalid.senha) {
-        console.log()
-       // window.Location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
+        window.location.href="https://deselvoviabreussilvano.github.io/html-css/nossa%20loja.html"
 
-        //let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
-        //localStorage.setItem('token',token)
-
-        //localStorage.setItem('userLogado', JSON.stringify(uservalid))
+        let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+        localStorage.setItem('token',token)
+        localStorage.setItem('userlogado', JSON.stringify(uservalid))
         
     } else {
         
-        tabelausuario.setAttribute('style', 'color: red')
-       Usuario.setAttribute('style', 'border-color: red')
-       tabelasenha.setAttribute('style', 'color: red')
-       Senha.setAttribute('style', 'border-color: red')
+        usuario.setAttribute('style', 'color: red')
+        entrarUsuario.setAttribute('style', 'border-color: red')
+       senha.setAttribute('style', 'color: red')
+       entrarSenha.setAttribute('style', 'border-color: red')
        msgerror.setAttribute ('style','text-align: center;  border-radius: 8px;  background-color: red ; color: white;')
        msgerror.innerHTML= 'Usuário ou senha inserida estão incorretos!'
 
-       Usuario.focus()
+       entrarUsuario.focus()
     }
-    console.log(uservalid)
-    }
-
-
-    let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-
-    let logado = document.querySelector('logado')
-    logado.innerHTML= `Olá``${userLogado.nome}` 
-
-    if(localStorage.getItem('token') == null){
-        alert('Você precisa estar logado para acessar esta página')
-        window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
-    }
-    function sair(){
-        localStorage.removeItem('token')
-        localStorage.removeItem('userLogado')
-    window.Location.href ="https://deselvoviabreussilvano.github.io/html-css/log.html"
+    
     }
