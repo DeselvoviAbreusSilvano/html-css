@@ -1,369 +1,369 @@
-   /* todas as animação */
-   div.inicial-titulo{
-      margin-top: -90px;
-      position: relative;
-      top: 20px;
-      left: -28%;
- 
-  }
-  div.inicial-titulo h1{
-     -webkit-text-stroke: .5vh #0000;
-     font-size: 6vw;
-     font-weight: bold;
-     text-align: center;
-     text-transform: uppercase;
-     background-image: url("../imagens/smartp.jfif");
-     background-clip: text;
-     -webkit-background-clip: text;
-     color: transparent;
-     animation: text 10s ease alternate infinite;
- }
- @keyframes text {
-     form{
-         background-position: 0%, 50%;
-     }
-     to{
-         background-position: 100%, 50%;
-     }
- }
- /* Estou logado! */
- #logado{
-    color: red;
-    margin: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2vw;
- }
- button#sair{
-    margin: 10px;
-    border-radius: 8px;
-    font-family: Verdana;
-    background-color: #00a8ff;
-    color: white;
-    transition: all 0.2s;
- }
- button#sair:hover{
-    background-color: blue;
-    color: red;
- }
+/* todas as animação */
+div.inicial-titulo{
+    margin-top: -90px;
+    position: relative;
+    top: 20px;
+    left: -28%;
 
- body{
-    background-color: rgb(223, 217, 217);
-    margin: 0px;
-    padding: 0px;
+}
+div.inicial-titulo h1{
+   -webkit-text-stroke: .5vh #0000;
+   font-size: 6vw;
+   font-weight: bold;
+   text-align: center;
+   text-transform: uppercase;
+   background-image: url("../imagens/smartp.jfif");
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: text 10s ease alternate infinite;
+}
+@keyframes text {
+   form{
+       background-position: 0%, 50%;
+   }
+   to{
+       background-position: 100%, 50%;
+   }
+}
+/* Estou logado! */
+#logado{
+  color: red;
+  margin: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2vw;
+}
+button#sair{
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Verdana;
+  background-color: #00a8ff;
+  color: white;
+  transition: all 0.2s;
+}
+button#sair:hover{
+  background-color: blue;
+  color: red;
+}
+
+body{
+  background-color: rgb(223, 217, 217);
+  margin: 0px;
+  padding: 0px;
 }
 section{
-    background-color: white;
-    text-justify: newspaper;
-    margin: 0px 10px 0px 10px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px black;
+  background-color: white;
+  text-justify: newspaper;
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
+  box-shadow: 1px 1px 4px black;
 }
 
-  /* configuração de sub menu principal */
+/* configuração de sub menu principal */
 .menu-principal{
-   display: block;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 14px;
-   font-weight: 900;
+ display: block;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 14px;
+ font-weight: 900;
 }
 
 .menu-principal ul{
-   list-style: none;
-   position: absolute;
-   top: -10px;
-   left: 53%;
+ list-style: none;
+ position: absolute;
+ top: -10px;
+ left: 53%;
 }
 
 .menu-principal li{
-   display: inline-block;
-   background-color: #cccc;
-   padding: 10px;
-   margin: 0px;
+ display: inline-block;
+ background-color: #cccc;
+ padding: 10px;
+ margin: 0px;
 }
 .menu-principal a{
-   color: #444;
+ color: #444;
 }
 .menu-principal ul li{
-   float: left;
+ float: left;
 }
 
 .menu-principal ul li:hover{
-  background-color: rgb(177, 174, 174);
-  color: green;
+background-color: rgb(177, 174, 174);
+color: green;
 }
 
 
- /* configuração footer */
- footer{
-    min-height: 250px;
-    background: #00a8ff;
-    display: flex;
-    margin: 0px 10px 0px 10px;
-    box-shadow: 1px 1px 4px black;
+/* configuração footer */
+footer{
+  min-height: 250px;
+  background: #00a8ff;
+  display: flex;
+  margin: 0px 10px 0px 10px;
+  box-shadow: 1px 1px 4px black;
 } 
 footer .boxs{
-   width: 350px;
-   min-height: 150px;
-   padding: 10px;
+ width: 350px;
+ min-height: 150px;
+ padding: 10px;
 }
 footer .boxs:nth-child(5){
-   width: 400px;
+ width: 400px;
 }
 .boxs h2{
-   color: white;
-   margin-bottom: 10px;
+ color: white;
+ margin-bottom: 10px;
 }
 .boxs ul li{
-   margin: 10px 0px;
-   list-style: none;
+ margin: 10px 0px;
+ list-style: none;
 }
 .boxs ul li a{
-   color: rgb(23, 241, 23);
-   text-decoration: none;
+ color: rgb(23, 241, 23);
+ text-decoration: none;
 }
 .boxs ul li a:hover{
-   color: green;
+ color: green;
 }
 .boxs p{
-   width: 250px;
-   color: white;
-   text-align: justify;
-   font-size: max(20px, 0.2rem);
+ width: 250px;
+ color: white;
+ text-align: justify;
+ font-size: max(20px, 0.2rem);
 }
 @media(max-width:950px)
 {
-   footer{
-       flex-direction: column;
-   }
-   footer .boxs{
-       width: 100%;
-       text-align: center;
-   }
-   footer .boxs:nth-child(5) {
-       width: 100%;
-   }
+ footer{
+     flex-direction: column;
+ }
+ footer .boxs{
+     width: 100%;
+     text-align: center;
+ }
+ footer .boxs:nth-child(5) {
+     width: 100%;
+ }
 }
 
 div.sociais,.desevolve{
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color: green;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ color: green;
 }
 /* redes sociais no footer */
 .footer{
-   height: 95px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background: rgb(4, 4, 153);
-   padding: 0px 20px;
-   margin: 0px 10px 0px 10px;
-   box-shadow: 1px 1px 4px black;
+ height: 95px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: rgb(4, 4, 153);
+ padding: 0px 20px;
+ margin: 0px 10px 0px 10px;
+ box-shadow: 1px 1px 4px black;
 }
 .footer h2{
-   font-family: Verdana;
-   font-weight: 900;
-   color: white;
+ font-family: Verdana;
+ font-weight: 900;
+ color: white;
 }
 div.sociais, .desevolve{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: green;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: green;
 }
 .footer .sociais{
-   display: flex;
+ display: flex;
 }
 .sociais .socia{
-   width: 40px;
-   height: 40px;
-   text-align: center;
-   line-height: 40px;
-   margin: 10px;
-   background: #ddd;
-   border-radius: 5px;
-   cursor: pointer;
-   transition: background .3s linear;
+ width: 40px;
+ height: 40px;
+ text-align: center;
+ line-height: 40px;
+ margin: 10px;
+ background: #ddd;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background .3s linear;
 }
 .sociais .socia:hover{
-   background-color: #444;
+ background-color: #444;
 }
 .sociais .socia:hover a{
-   background-color: white;
+ background-color: white;
 }
 .sociais .socia a{
-   color: green;
-   font-size: 1.5rem;
-   transition: color .3s linear;
+ color: green;
+ font-size: 1.5rem;
+ transition: color .3s linear;
 }
 
- /* textos e imagens */
+/* textos e imagens */
 div#textos{
-    display: table;
+  display: table;
 }
 div#googlean{
-    display: table-cell;
-    float: left;
+  display: table-cell;
+  float: left;
 }
 div#textgoogle{
-    display: table-cell;
-    float: left;
-    margin-left: 10px;
-    margin-top: 50px;
-    
+  display: table-cell;
+  float: left;
+  margin-left: 10px;
+  margin-top: 50px;
+  
 }
 /* configuração para os meus texto principal */
 div.paragraum{
-   display: table-cell;
-   float: left;
-   
+ display: table-cell;
+ float: left;
+ 
 }
 div.paragraum h1{
-   color: #00a8ff;
-   font-family: Verdana;
-   font-size: 2rem;
+ color: #00a8ff;
+ font-family: Verdana;
+ font-size: 2rem;
 }
 div.paragraum p{
-   font-family: Verdana;
-   font-size: min(15px, 1.2rem);
-   width: 450px;
-   font-weight: 900;
-   text-indent: 30px;
+ font-family: Verdana;
+ font-size: min(15px, 1.2rem);
+ width: 450px;
+ font-weight: 900;
+ text-indent: 30px;
 }
 div.paragraum .figuras{
-   box-shadow: 1px 1px 5px red;
+ box-shadow: 1px 1px 5px red;
 }
 div.paragraum figcaption{
-   background-color: red;
-   width: 300px;
-   color: white;
-   border-radius: 8px;
+ background-color: red;
+ width: 300px;
+ color: white;
+ border-radius: 8px;
 }
 div.paragradois{
-   display: table-cell;
+ display: table-cell;
 }
 div.paragradois p{
-   font-family: Verdana;
-   font-size: min(15px, 1.2rem);
-   font-weight: 900;
-   text-indent: 30px;
-   line-height: 20px;
+ font-family: Verdana;
+ font-size: min(15px, 1.2rem);
+ font-weight: 900;
+ text-indent: 30px;
+ line-height: 20px;
 }
 div.paragradois h2{
-   color: #00a8ff;
-   font-family: Verdana;
-   font-weight: 900;
-   font-size: max(30px, 1.2rem);
-   margin: 20px;
-   text-align: center;
+ color: #00a8ff;
+ font-family: Verdana;
+ font-weight: 900;
+ font-size: max(30px, 1.2rem);
+ margin: 20px;
+ text-align: center;
 }
 div.tabelaemail{
-   display: table-cell;
-   float: left;
+ display: table-cell;
+ float: left;
 }
 /* configuração produtos vendas */
 div.produtosvenda{
-   background-color: whitesmoke;
-   box-shadow: 1px 1px 5px blue;
+ background-color: whitesmoke;
+ box-shadow: 1px 1px 5px blue;
 }
 div.vendas ul li{
-   background: #00a8ff;
-   color: white;
-   list-style: none;
-   text-transform: uppercase;
-   display: inline-block;
-   transition: 2s;
+ background: #00a8ff;
+ color: white;
+ list-style: none;
+ text-transform: uppercase;
+ display: inline-block;
+ transition: 2s;
 }
 div.vendas li{
-   border: 1px solid green;
-   margin: 5px;
-   padding: 5px;
+ border: 1px solid green;
+ margin: 5px;
+ padding: 5px;
 }
 div.vendas ul li:hover{
-   background-color: #444;
-   color: red;
+ background-color: #444;
+ color: red;
 }
 div.vendas h1{
-   color: red;
-   font-size: 20px;
-   font-family: Verdana;
-   font-weight: 900;
+ color: red;
+ font-size: 20px;
+ font-family: Verdana;
+ font-weight: 900;
 }
 div.lojavenda{
-   display: table-cell;
+ display: table-cell;
 }
 .nossoprod{
-   color: #00a8ff;
-   text-align: center;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: #00a8ff;
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
- /* manuteção e venda */
+/* manuteção e venda */
 div.textosnovi h1{
-   color: rgb(10, 238, 10);
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 900;
+ color: rgb(10, 238, 10);
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 900;
 }
 div.textosnovi h4{
-   color: red;
-   font-family: Arial, Helvetica, sans-seri;
-   font-weight: 900;
+ color: red;
+ font-family: Arial, Helvetica, sans-seri;
+ font-weight: 900;
 }
 div.novi h3{
-   background-color: #00a8ff;
-   width: 280px;
-   color: green;
-   text-align: center;
-   font-family: verdana;
-   font-weight: 900;
-   display: flex;
+ background-color: #00a8ff;
+ width: 280px;
+ color: green;
+ text-align: center;
+ font-family: verdana;
+ font-weight: 900;
+ display: flex;
 }
- /* tabelas */
- div.tbpreços{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- .tabela{
-    background-color: rgb(43, 247, 43);
-    box-shadow: 1px 1px 4px black;
-    font-family: Verdana, sans-serif;
-    font-weight: 900;
-    border-collapse: collapse;
-    max-height: 200px;
-    overflow: hidden;
- }
- .tabela-titulo{
-   display: block;
-   padding: 20px;
- }
- .tabela-titulo .title{
-   display: block;
-   color: red;
-   font-family: Verdana,sans-serif;
-   font-weight: 900;
-   text-align: center;
-   font-size: 1.4em;
-   letter-spacing: 1.4px;
- }
- .tabela thead{
-    background-color: blue;
-    transition: 2s;
- }
- .tabela thead:hover{
-    background-color: #444;
-    color: red;
- }
- .tabela tbody tr:hover{
-    background-color: #444;
- }
- .tabela tbody tr:nth-child(even){
-   background-color: #00a8ff;
+/* tabelas */
+div.tbpreços{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- .tabela thead tr th{
-   text-align: left;
-   color: white;
-   font-family: Arial, sans-serif;
+.tabela{
+  background-color: rgb(43, 247, 43);
+  box-shadow: 1px 1px 4px black;
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+  border-collapse: collapse;
+  max-height: 200px;
+  overflow: hidden;
 }
- .tabela th, .tabela td{
-     padding: 15px;
-     border: 1px solid blue;
-     max-width: 150px;
- }
+.tabela-titulo{
+ display: block;
+ padding: 20px;
+}
+.tabela-titulo .title{
+ display: block;
+ color: red;
+ font-family: Verdana,sans-serif;
+ font-weight: 900;
+ text-align: center;
+ font-size: 1.4em;
+ letter-spacing: 1.4px;
+}
+.tabela thead{
+  background-color: blue;
+  transition: 2s;
+}
+.tabela thead:hover{
+  background-color: #444;
+  color: red;
+}
+.tabela tbody tr:hover{
+  background-color: #444;
+}
+.tabela tbody tr:nth-child(even){
+ background-color: #00a8ff;
+}
+.tabela thead tr th{
+ text-align: left;
+ color: white;
+ font-family: Arial, sans-serif;
+}
+.tabela th, .tabela td{
+   padding: 15px;
+   border: 1px solid blue;
+   max-width: 150px;
+}
