@@ -7,14 +7,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="AndroSilva">
 <title>AndroSilva na minha pagina, tudo sobre android</title>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/tablet.css" media="(min-width:600px)">
+<link rel="stylesheet" href="css/desktop.css" media="(min-width:1100px)">
  <link rel="shortcut icon" href="favi.png" type="image/x-icon">
+ <script src="./javascript/entrar.js" defer></script>
+ <script src="./javascript/Log.js" defer></script>
+ <script src="./javascript/animação.js" defer></script>
+
 </head>
   <body>
     <header>
       <div class="titulo-principal">
         <h1>Seja bem vindo no site</h1>
-        <h2>AndroSilva...</h2>
+        <h2>AndroSilva / tudo sobre android...</h3>
         <div class="Administradore">
           <div class="fundo-administra"> 
             <div class="cartão-adminstra">
@@ -113,12 +119,6 @@
           </ul>
         </nav>
         </div>
-  
-        <div class="search-box">
-          <input class="busca" type="text" name="text" placeholder="Faça a sua busca" id="nome-busca">
-          <a class="search-btn" href="#" target="_blank"><img src="./imagens/lupa.png" alt=""></a>
-        </div>
-  
         <div class="menu-principal">
           <a href="Nosso Canal.html"> Nosso Canal</a>
             <a href="ferramenta.html">ferramenta flash</a>
@@ -128,7 +128,17 @@
         </div>
     </header>
     <section>
-      
+           <div class="caixas-pesquisa">
+             <div class="box-pesquisa">
+               <form class="formas" method="get" action="https://www.google.com.br/search?q=" target="_blank">
+                 <input type="search" name="search" placeholder="Pesquisar" class="fazer-busca" id="fazer-busca">
+               </form>
+               <button class="btn">
+                <img src="./lupa.png" title="Pesquisar" alt="" class="imagen-lupa">
+               </button>
+             </div>
+           </div>
+           <script src="./javascript/pesquisar.js" defer></script>
       <div class="lojas-principal">
       <div class="googleplay">
         <h1>Android</h1>
@@ -143,14 +153,33 @@
           <h1>Loja AndroSilva</h1>
           <p>A companhia também revelou os novos smartphones Tecno 8 SPARCK e Itel A30 Pro, bem como o relógio inteligente, que serão lançados em uma segunda etapa.
              Para 2023, a empresa anunciou que lançará o Ticno e itel Tablet.</p>
+              <h1>Apresentamos o Android 12</h1>
+              <p>
+             <strong> A versão do Android</strong>  mais recente oferece experiências ainda mais
+              personalizadas, seguras e simplificadas no seu dispositivo. Com uma IU
+              reformulada, novos recursos de privacidade e muito mais.
+              Tenha proteção e controle.
+             </p>
+             <p>
+              Google Play Protect, atualizações de segurança regulares e controle sobre
+              como seus dados são compartilhados. Trabalhamos todos os dias para
+              proteger os mais de 2,5 bilhões de dispositivos Android ativos e para manter a
+              privacidade dos usuários.
+              Deixe o mundo acessível.
+              Leitores de tela, conversão de voz em texto e algumas das maneiras mais
+              recentes de conhecer o mundo do seu jeito.
+              Opções para trabalhar, jogar, fazer streaming em 5G e muito
+              mais.( <a href="">Veja na nossa loja</a> ) Globalmente, há mais de 24.000 smartphones e tablets
+              com o Android. <a href="#">Ver mais</a> </p>
               <div class="imagens-loja">
-                <img src="./imagens/benner1.jpg" alt="">
-                <img src="./imagens/intelnovi.jpg" alt="">
-                <img src="./imagens/saiba mais.jpg" alt="">
-                <img src="./imagens/regas.jpg" alt="">
+                <img src="./imagens/benner5.jpg" alt="" id="berner">
+                <img src="./imagens/intelnovi.jpg" alt="" id="berner">
+                <img src="./imagens/saiba mais.jpg" alt="" id="berner">
+                <img src="./imagens/regas.jpg" alt="" id="berner">
+                <img src="./imagens/transferir (1).jfif" alt="" id="berner">
               </div>
         </div>
-              </div>
+      </div>
   
              <div class="textos-principal">
                
@@ -164,7 +193,7 @@
                 <div class="textos-aplicativos">
                   <div class="paragrafos1">
                     <h1>Como ver melhores aplicativos</h1>
-                    <p>O download dos melhores aplicativos de notícias de tecnologia para Android ajuda você a obter informações sobre as atualizações de tecnologia mais recentes, AndroSilva de tecnologia populares e muito mais. 
+                    <p>O download dos melhores site AndroSilva que revelas tudo sobre android com aplicativos de notícias de tecnologia, para Android ajuda você a obter informações sobre as atualizações de tecnologia mais recentes, AndroSilva de tecnologia populares e muito mais. 
                       Se você possui um dispositivo Android e está confuso sobre qual aplicativo baixar para obter as últimas tecnologia, verifique a lista abaixo.
                       Aqui, escolhemos a dedo os 10 melhores aplicativos de notícias para Android que você deve experimentar em 2022.</p>
                   </div>
@@ -177,6 +206,126 @@
               </div>
       
       </div>
+      <main id="flutuare">
+        <div class="titulo-flutuar">
+          <h1>firmware/Aplicativo</h1>
+        </div>
+        <div class="todos-flutuante">
+        <div class="Firmware-principal">
+          <div class="textos-firmware">
+            <h1>Firmware</h1>
+            <h2>PlayStor</h2>
+            <p>Com ele PlayStor, o serviço consegue entrar em ação quando os usuários olham para a câmera do dispositivo,
+               não indicou quando o recurso será disponibilizado para outros países. <a href="#">ver mais</a></p>
+               <p>Outra novidade na busca é o  PlayStor, um recurso que consegue apresentar informações sobre vários objetos que aparecem em uma imagem.
+                  Segundo o Google,
+                  a opção pode ajudar a encontrar mais rapidamente um produto no mercado ou um remédio na farmácia, por exemplo.</p>
+                  <h2>Google Assistente</h2>
+                  <p>O Google trabalha para permitir conversas mais naturais e dispensar a necessidade de dizer "OK, Google" para ativar o assistente.
+                     Para isso, a empresa liberou o recurso "look  <a href="#">ver mais</a></p>
+          </div>
+          <div class="caixas-firmware">
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware Samsung</a>
+          </div>
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware itel</a>
+          </div>
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware Tecno</a>
+          </div>
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware Lenovo</a>
+          </div>
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware Wuawei</a>
+          </div>
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware Wiko</a>
+          </div>
+          <div class="firmware">
+            <img src="./imagens/google/temos1.jpg" alt="">
+            <a href="#">firmware Nokia</a>
+          </div>
+          <div class="link-button">
+            <a href="#">Mais firmware</a>
+          </div>
+        </div>
+        </div>
+        <div class="Aplicativo">
+          <div class="titulos-aplicativo">
+            <h1>Aplicativos APK</h1>
+            <h2>PlayStor</h2>
+            <p>Com ele PlayStor, o serviço consegue entrar em ação quando os usuários olham para a câmera do dispositivo,
+               não indicou quando o recurso será disponibilizado para outros países. <a href="#">ver mais</a></p>
+               <p>Outra novidade na busca é o  PlayStor, um recurso que consegue apresentar informações sobre vários objetos que aparecem em uma imagem.
+                  Segundo o Google,
+                  a opção pode ajudar a encontrar mais rapidamente um produto no mercado ou um remédio na farmácia, por exemplo.</p>
+                  <h2>Google Assistente</h2>
+                  <p>O Google trabalha para permitir conversas mais naturais e dispensar a necessidade de dizer "OK, Google" para ativar o assistente.
+                     Para isso, a empresa liberou o recurso "look  <a href="#">ver mais</a></p>
+          </div>
+          <div class="Aplicativo-principal">
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">instagram apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">menssenger apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">firefox apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">Browser Opera apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">Visio apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">facebook apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">Google chrome apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">CPU apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">VCL apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">4k-video-downloader apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">AIMP apk</a>
+            </div>
+            <div class="firmware">
+              <img src="./imagens/facebook icon.png" alt="" id="favicon">
+              <a href="#">atualizações software apk</a>
+            </div>
+            <div class="link-button">
+              <a href="#">Mais aplicativo</a>
+            </div>
+        </div>
+        </div>
+      </main>
     </section>
   <aside>
     <div class="indice-principal">
@@ -200,7 +349,7 @@
         <p></p>
       </div>
       <div class="topicos">
-        <h1>Todos os tópicos de ferramentas</h1>
+        <h1>Todos os tópicos de aplicativos</h1>
         <h2>O que quer saber?</h2>
         <a href="#">Como remover conta-google no android 8?</a><br>
         <a href="#">Como remover conta-google no android 8?</a><br>
@@ -228,42 +377,169 @@
           Para o android ou android smartphones, é necessário ter uma ferramenta para fazer o desbloqueio da conta-google
           e estar ligado a uma rede wifi ou rede move enicializar o processo. <a href="#">ver mais</a>
         </p>
-          <h1>Google</h1>
+          <h2>Google</h2>
              <p>O Google afirma que, para aumentar o suporte do Tradutor, trabalhou com falantes, professores e linguistas especializados nos idiomas recém-adicionados.</p>
       </div>
     </div>
-    <div class="caixas-email">
-      <div class="Notificação">
-        <div class="menssagem">
-          <h1 class="comentar-titulo">Seja o primeiro a comentar</h1>
-          <input type="tel" id="números" placeholder="Número" required>
-        </div>
-        <div class="menssagem">
-          <input type="email" id="emaili" placeholder="Email" required>
-        </div>
-    
-        <div class="menssagem">
-          <input type="text" id="comentar" placeholder="faça a menssagem" required>
-        </div>
-        <div class="menssagem">
-          <div class="virar-caixa">
-            <p>Tomei conhecimento aceito os termos legais</p>
-            <input type="checkbox" id="checkbox" placeholder="" required>
-          </div>
-        </div>
-        <div class="menssagem-enviar">
-        <button class="enviar">Enviar</button>
+    </div>
+    <div class="caixas-publicidade">
+    <div class="link-caixas">
+      <h1>AndroSilva</h1>
+      <h2>Mais para os seus aprovetos</h2>
+       <ul>
+         <li><a href="#">Quem somos</a></li>
+         <li><a href="#">Nossa loja</a></li>
+         <li><a href="#">Tutorial</a></li>
+         <li><a href="#">Termos</a></li>
+         <li><a href="#">Política</a></li>
+         <li><a href="#">Android</a></li>
+         <li><a href="#">Windows</a></li>
+       </ul>
+    </div>
+    <div class="Curso-caixas">
+      <h1>Nossos cursos</h1>
+      <h2>temos para si os seguintes cursos</h2>
+       <ul>
+         <li><a href="#">Informática</a></li>
+         <li><a href="#">Conhecimentos básica de Android</a></li>
+         <li><a href="#">Como remover conta-google</a></li>
+         <li><a href="#">Conhecimentos básica de eletrónica</a></li>
+         <li><a href="#">Hardware no Android</a></li>
+         <li><a href="#">Inastalaçao de firmware com PC</a></li>
+         <li><a href="#">Windows</a></li>
+       </ul>
+    </div>
+    <div class="Menu-caixas">
+      <h2>ferramentas desbloqueio de conta-google </h2>
+       <nav id="menu-google">
+         <ul>
+          <a href="#"><li>desbloqueio
+            <ul>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              
+            </ul>
+          </li></a>
+          <a href="download.html" target="_blank"><li>download
+            <ul>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+             
+            </ul>
+
+          </li></a>
+          <a href="#"><li>ferramenta
+            <ul>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+              <li>bypass apk</li>
+               
+
+            </ul>
+
+          </li></a>
+          <a href="log.html"><li>Log</li></a>
+         </ul>
+       </nav>
+    </div>
+    </div>
+    <div id="Lauytes">
+        <h1>Escolha o seu melhore no AndroSilva</h1>
+      <div class="imagens-lauytes">
+        <img src="./imagens/transferir (1).jfif" alt="" style="width: 130px; height: 140px;">
+        <div class="Animação-caixa">
+        <figcaption>Wuawei P30</figcaption>
+        <a href="#">Mais Wuawei</a>
         </div>
       </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/visio.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Itel visio</figcaption>
+        <a href="#">Mais visio</a>
+        </div>
       </div>
-    
-          </div>
-          </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/Tecnos.png" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Nossa loja</figcaption>
+        <a href="#">Mais Tecno</a>
+        </div>
       </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/mobale.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Mobale moves</figcaption>
+        <a href="#">Mais mobale</a>
+        </div>
+      </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/fone.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Lenovo</figcaption>
+        <a href="#">Mais fones</a>
+        </div>
+      </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/meulepto.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Computadore HP</figcaption>
+        <a href="#">Mais Computadore</a>
+        </div>
+      </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/Marcas.png" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Marcas</figcaption>
+        <a href="#">Novidades</a>
+        </div>
+      </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/Samsungs.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Marcas A30</figcaption>
+        <a href="#">Mais Samsung</a>
+        </div>
+      </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/fone.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>Fones sem fio</figcaption>
+        <a href="#">Mais Fones</a>
+        </div>
+      </div>
+      <div class="imagens-lauytes">
+        <img src="./imagens/intelnovi.jpg" alt="">
+        <div class="Animação-caixa">
+        <figcaption>itel Pro</figcaption>
+        <a href="#">Mais itel</a>
+        </div>
       </div>
     </div>
-
-  </aside>  
+    <div id="desbloqueio">
+      <div class="imagens-centro">
+        <picture>
+          <source media="(max-width: 700px)" srcset="./imagens/Firmware.png" type="image/png">
+      <img src="./imagens/muller.jpg" alt="">
+      <figcaption> <h3>Android12</h3></figcaption>
+        </picture>
+      </div>
+      <h1>Google-Tradutore</h1>
+      <p>O aplicativo de traduções do Google ganhou suporte para mais 24 idiomas, totalizando 133 disponíveis ao todo.
+         De acordo com a empresa, mais de 300 milhões de pessoas falam as línguas que ficaram disponíveis na ferramenta.
+        Na lista, há idiomas indígenas da América do Sul, como o guarani que, segundo o Google, é falado por mais de sete milhões de pessoas no Paraguai, na Bolívia, na Argentina e no Brasil.
+        </p>
+    </div>
+    </aside>
     <footer>
       <div class="boxs">
         <h2>Início</h2>
