@@ -1,4 +1,4 @@
-  
+   
  body{
   background-color: white;
  margin: 0;
@@ -36,26 +36,26 @@ div.titulo-principal h1{
   font-family: Arial, sans-serif;
   font-size: 3vw;
   font-weight: 800;
-  margin-top: -15px;
+  margin-top: -1px;
   margin-left: 5px;
   padding-bottom: 20px;
 }
-div.titulo-principal h2{
+div.titulo-principal h5{
  color: #dc3545;
  font-family: Arial, sans-serif;
  font-size: 2vw;
  font-weight: 800;
  margin: 5px;
- margin-top: -40px;
+ margin-top: -44px;
 }
 div.menu-principal{
 display: flex;
 align-items: center;
 justify-content: right;
-margin-top: -38%;
+margin-top: -39%;
 padding: 5px;
 background-color: blue;
-height: 85px;
+height: 90px;
 box-shadow: 0px 0px 4px black;
 border-radius: 10px 10px 0px 0px;
 }
@@ -80,7 +80,7 @@ header .fundo-administra{
    justify-content: left;
    max-height: 10px;
    position: relative;
-   top: 230px;
+   top: 190px;
    left: 10;
 
 }
@@ -89,7 +89,7 @@ header.cartão-adminstra,.imagen-administra{
    height: 380px;
    border-radius: 50%;
    padding: 3px;
-   background-color: white;
+   background-color: #f8f9fa;
 }
 header.cartão-adminstra,.imagen-administra img#Administrador{
    width: 100%;
@@ -99,22 +99,27 @@ header.cartão-adminstra,.imagen-administra img#Administrador{
 }
 
 /* Configuraão da arias Admintrada */
-div.imagenfundo p{
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   text-align: justify;
+div.imagenfundo,p.figuras{
+ color: #0a58ca;
+   font-family:Arial;
+   text-align: center;
+   font-size: 13px;
    text-indent: 10px;
-   padding: 0 !important;
-   font-size: clamp(1em, 1em + 1vw, 1.15em);
+   line-height: 30px;
+   width: 150px;
+   padding: 10 !important;
+   margin-left: 40px; 
 }
 header figure.fotos-legenda{
-   text-align: center;
    position: relative;
+   top: 20px;
+   left: 10px;
 }
 header figure.fotos-legenda figcaption{
    opacity: 0;
    position: absolute;
-   left: 0px;
-   top: 0;
+   left: -11px;
+   top: 20px;
    background-color: rgba(0, 0, 0,.5);
    border-radius: 100%;
    color: white;
@@ -124,7 +129,8 @@ header figure.fotos-legenda figcaption{
    transition: all 2s;
 }
 header figure.fotos-legenda figcaption h2,h3,h4{
-   padding: 5px;
+   padding: 20px;
+  text-align: center;
 }
 header figure.fotos-legenda:hover > figcaption{
    opacity: 1;
@@ -218,7 +224,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 width: 250px;
 color: white;
 text-align: justify;
-font-size: clamp(1em, 1em + 1vw, 1.15em);
+font-size: clamp(1em);
 }
 @media(max-width:950px)
 {
@@ -360,6 +366,47 @@ div.Aplicativo{
  box-shadow: 0px 0px 4px black;
  border-radius: 10px 10px 0px 0px;
 }
+div.playstor{
+ margin: 5px;
+ background-color: white;
+ height: 150px;
+ border-radius: 10px 10px 0px 0px;
+ animation-name: play;
+ animation-duration: 6s;
+ animation-delay: 2s;
+ animation-iteration-count: 3;
+}
+@keyframes play{
+ 0%{background-color: rgb(14, 247, 14) ; width: 100%;}
+ 50%{background-color: yellow ; width: 80px;}
+ 80%{background-color:white ; width: 50px;}
+ 100%{background-color: white; width: 100%; height: 120px;}
+}
+#Store{
+ border-radius: 10px;
+ box-shadow: 10px 10px 5px black;
+ transition: transform 0.2s;
+}
+div.playstor,#Store{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 10px;
+}
+#Store:hover{
+transform: rotateZ(360deg);
+background-color: rgba(0, 0, 0, 0.512);
+}
+div.playstor,figcaption{
+ margin-top: -20px;
+margin-left: 10px;
+ text-align: right;
+ font-family: Verdana;
+ font-weight: 900;
+ font-size: 10px;
+ color: red;
+}
+
 div.Firmware-principal{
  display: table;
  box-shadow: 0px 0px 4px black;
@@ -420,7 +467,7 @@ div.textos-firmware p{
   padding: 5px;
   text-indent: 20px;
   font-family: Arial;
-  font-size: clamp(1em, 1em + 1vw, 1.15em);
+  font-size: clamp(1em);
   padding: 0 !important;
 }
 
@@ -429,7 +476,7 @@ div.titulos-aplicativo{
  margin-top: -2px;
  background-color: #198754;
  border-radius: 10px 10px 0px 0px ;
- height: 705px;
+ height: 778px;
 }
 div.titulos-aplicativo h1{
    color: white;
@@ -447,7 +494,7 @@ div.titulos-aplicativo p{
   padding: 5px;
   text-indent: 20px;
   font-family: Arial;
-  font-size: clamp(1em, 1em + 1vw, 1.15em);
+  font-size: clamp(1em);
 }
 div.link-button{
  display: flex;
@@ -484,21 +531,26 @@ div.link-button a{
 }
 
 div.googleplay{
+  background-color: #198754;
  width: 450px;
  margin: 20px;
+ border: 2px solid #0dcaf0;
+ box-shadow: 10px 10px 5px #0dcaf0;
  
 }
-div.googleplay h1,h2{
+div.googleplay h1, h2{
  color: #00a8ff;
  font-size: 2vw;
+ margin: 5px;
  
 }
 div.googleplay p{
  text-align: justify;
  text-indent: 20px;
  line-height: 20px;
- font-size: clamp(1em, 1em + 1vw, 1.25em);
+ font-size: clamp(1em);
  font-family: Arial;
+ margin: 5px;
  
 }
 div.lojas-principal{
@@ -522,7 +574,7 @@ div.textos-aplicativos p{
  font-family: Arial;
  text-indent: 20px;
  line-height: 20px;
- font-size: clamp(1em, 1em + 1vw, 1.15em);
+ font-size: clamp(1em);
  margin: 10px;
   }
   div.paragrafos1{
@@ -536,6 +588,7 @@ div.imagens-aplictivos{
 div.imagens-aplictivos img{
   box-shadow: 0px 0px 4px black;
   border: 1px solid #00a8ff;
+  margin: 10px;
 }
 div.lojas-principal{
  display: flex;
@@ -543,10 +596,46 @@ div.lojas-principal{
  justify-content: center;
  margin: 10px;
 }
+div.Noticias{
+ display: table;
+ margin: 5px;
+}
+div.textos-noticias{
+ display: table-cell;
+ margin-left: 10px;
+ margin-top: -20px;
+}
+div.textos-noticias h1{
+color: #0dcaf0;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 800;
+}
+div.textos-noticias p{
+ text-align: justify;
+ font-family: Arial, sans-serif;
+ text-indent: 10px;
+ line-height: 30px;
+ font-size: 1em;
+ margin: 20px;
+}
+div.imagens-noticias{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+div.imagens-noticias #noticias-imagen{
+ border-radius: 10px;
+ transition: transform 0.2s;
+}
+div.imagens-noticias #noticias-imagen:hover{
+transform: scale(2.4);
+box-shadow: 0px 0px 4px #0dcaf0;
+}
 div.lojas-principal p{
  text-align: justify;
  font-family: Arial;
- font-size: clamp(1em, 1em + 1vw, 1.15em);
+ font-size: clamp(1em);
  
 }
 div.lojas-principal h1{
@@ -560,10 +649,14 @@ div.recebera-email{
  width: 500px;
 }
 div.recebera-email p{
+ background-color: white;
+ border-radius: 10px;
+ box-shadow: 0px 0px 4px black;
   margin: 20px;
- font-family: verdana, sans-serif;
+  padding: 10px;
+ font-family:  verdana,sans-serif;
  text-align: justify;
- font-size: clamp(1em, 1em + 1vw, 1.15em);
+ font-size: 15px;
 }
 div.recebera-email h3{
  color: green;
@@ -922,7 +1015,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 text-align: justify;
 text-indent: 20px;
 line-height: 30px;
-font-size: clamp(1em, 1em + 1vw, 1.15em);
+font-size: clamp(1em);
 margin: 10px;
   
 }
