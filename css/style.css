@@ -7,24 +7,24 @@
 }
 header{
   background-color: #f8f9fa;
-  margin: 0px 30px 0px 30px;
+  margin: 0px 2px 0px 2px;
   padding-bottom: 37%;
 }
 section{
  background-color: #f8f9fa;
- margin: 0px 30px 0px 30px;
+ margin: 0px 2px 0px 2px;
  padding: 5px; 
 }
 aside{
  background-color: #f8f9fa;
- margin: 0px 30px 0px 30px;
+ margin: 0px 2px 0px 2px;
  padding: 5px;
 }
 div.titulo-principal{
   background-image: url('../imagens/Oppo-magvooc--696x392.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 550px;
 
 }
 .imagens-loja #berner{
@@ -32,7 +32,7 @@ div.titulo-principal{
     margin: 5px;
 }
 div.titulo-principal h1{
-  color: #dc3545;
+  color: #f8f9fa;
   font-family: Arial, sans-serif;
   font-size: 3vw;
   font-weight: 800;
@@ -41,7 +41,7 @@ div.titulo-principal h1{
   padding-bottom: 20px;
 }
 div.titulo-principal h5{
- color: #dc3545;
+ color: #f8f9fa;
  font-family: Arial, sans-serif;
  font-size: 2vw;
  font-weight: 800;
@@ -49,44 +49,107 @@ div.titulo-principal h5{
  margin-top: -44px;
 }
 div.menu-principal{
-display: flex;
-align-items: center;
-justify-content: right;
-margin-top: -39%;
+display: block;
+ margin-top: -42%;
 padding: 5px;
 background-color: blue;
-height: 90px;
+height: 120px;
 box-shadow: 0px 0px 4px black;
 border-radius: 10px 10px 0px 0px;
 }
 
-div.menu-principal a{
- color:white;
- font-family: Arial, sans-serif;
- font-size: 16px;
- font-weight: 900;
- margin: 5px;
- text-decoration: none;
- transition: all 0.2s ease-out;
+div.menu-principal,div.button  a{
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
 }
-div.menu-principal a:hover{
- background-color: #cccccc;
- color: green;
+
+div.button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:30px;
+  
 }
-/* Administrador */
+.Log{
+  border: none;
+  color: #f8f9fa;
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+@keyframes bourcen{
+  0%, 20%, 60%, 100%{
+      -webkit-transform: translateY(0) ;
+      transform: translateY(0);
+  }
+  40%{
+      -webkit-transform: translateY(-20px) ;
+      transform: translateY(-20px);
+  }
+  80%{
+      -webkit-transform: translateY(-10px) ;
+      transform: translateY(-10px);
+  }
+}
+
+
+.log1{
+  background-color: rgb(18, 245, 18);
+
+}
+ .log1:hover{
+     animation: bourcen 1s;
+ }
+
+ @keyframes bourcen{
+  0%, 20%, 60%, 100%{
+      -webkit-transform: translateY(0) ;
+      transform: translateY(0);
+  }
+  40%{
+      -webkit-transform: translateY(-20px) ;
+      transform: translateY(-20px);
+  }
+  80%{
+      -webkit-transform: translateY(-10px) ;
+      transform: translateY(-10px);
+  }
+}
+
+
+.log2{
+  background-color: white;
+
+}
+ .log2:hover{
+     animation: bourcen 1s;
+ }
+
+
+
+ /* Administrador */
 header .fundo-administra{
    display: flex;
    align-items: center;
    justify-content: left;
    max-height: 10px;
    position: relative;
-   top: 190px;
+   top: 200px;
    left: 10;
 
 }
 header.cartão-adminstra,.imagen-administra{
-   width: 250px;
-   height: 380px;
+   width: 220px;
+   height: 350px;
    border-radius: 50%;
    padding: 3px;
    background-color: #f8f9fa;
@@ -189,7 +252,7 @@ footer{
  min-height: 250px;
  background: #00a8ff;
  display: flex;
- margin: 0px 30px 0px 30px;
+ margin: 0px 2px 0px 2px;
  box-shadow: 1px 1px 4px black;
 } 
 footer .boxs{
@@ -247,7 +310,7 @@ footer .boxs:nth-child(5) {
  align-items: center;
  background: rgb(4, 4, 153);
  padding: 0px 20px;
- margin: 0px 30px 0px 30px;
+ margin: 0px 2px 0px 2px;
  box-shadow: 1px 1px 4px black;
 }
 .footer h2{
@@ -296,12 +359,12 @@ div.sociais, .desevolve{
  font-family: Arial, Helvetica, sans-serif;
  text-transform: uppercase;
  text-align: center;
- font-size: 15px;
+ font-size: 12px;
  font-weight: 700;
  line-height: 40px;
 
  position: relative;
- top: 360px;
+ top: 380px;
  transition: transform 0.2s;
 }
 #Menu-principal ul li:hover{
@@ -322,7 +385,7 @@ div.sociais, .desevolve{
   
 }
 #Menu-principal ul li ul{
- margin-top: -356px;
+ margin-top: -377px;
  text-align: left;
 }
 
@@ -347,7 +410,7 @@ div.titulo-flutuar h1{
  text-align: center;
  font-family: Arial, Helvetica, sans-serif;
  font-weight: 900;
- font-size: 3vw;
+ font-size: 1vw;
 }
 div.todos-flutuante{
  display: table;
@@ -1002,37 +1065,43 @@ div.Menu-caixas{
 #menu-google ul li:hover > ul{
  display: block;
 }
+ 
+ div.todos-uteis{
+   display: table;
+ }
+ div.link-uteis{
+   display: table-cell;
+   margin-left: 10px;
+ }
+div.textos-uteis{
+ display: table-cell;
+ float: right;
+  }
+  div.textos-uteis  p{
+     width: 250px;
+     margin-left: 50px;
+    }
 
-div#desbloqueio .imagens-centro{
- display: flex;
- align-items: center;
- justify-content: center;
-  
+    div.textos-uteis h6{
+      display: block;
+        background-color: rgb(6, 245, 6);
+        color: white;
+        margin-left: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, sans-serif;
+    }
+    
+div.imagens-uteis{
+  display: table-cell;
+ float: left;  
+ margin-top: 150px
+ ;
+ margin-left: 20px;
 }
-
-div#desbloqueio p{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-text-align: justify;
-text-indent: 20px;
-line-height: 30px;
-font-size: clamp(1em);
-margin: 10px;
-  
-}
-
-div#desbloqueio h1{
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- text-align: justify;
- text-indent: 20px;
- line-height: 30px;
- margin: 10px;
-   
-}
-
-
-div#desbloqueio .imagens-centro img{
- box-shadow: 0px 0px 5px black;
- border: 2px solid blue;
+div.imagens-uteis img{
+  width: 200px;
+  margin-left: 10px;
 }
 
 div#Lauytes{
