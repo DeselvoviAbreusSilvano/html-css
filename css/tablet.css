@@ -21,7 +21,7 @@ aside{
  padding: 5px;
 }
 div.titulo-principal{
-  background-image: url('../imagens/Oppo-magvooc--696x392.webp');
+  background-image: url('../pc_01.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
@@ -57,6 +57,38 @@ height: 120px;
 box-shadow: 0px 0px 4px black;
 border-radius: 10px 10px 0px 0px;
 }
+
+nav.menu-suporte{
+  display: block;
+  box-sizing: border-box;
+}
+nav.menu-suporte ul{
+  list-style: none;
+  text-transform: uppercase;
+}
+nav.menu-suporte li{
+  display: inline-block;
+  margin-left: 8px;
+  margin-top: -15px;
+  color: white;
+  font-weight: 900;
+  font-family: Verdana, sans-serif;
+  transition: transform all 0.2s ease;
+}
+nav.menu-suporte ul li:hover{
+ color: yellow;
+ transform: scale(1.5);
+
+
+}
+
+
+div.menu-principal,div.button  a{
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
 
 div.menu-principal,div.button  a{
   text-align: center;
@@ -249,12 +281,15 @@ border-radius: 50px;
 }
 /* configuração para footer */
 footer{
- min-height: 250px;
- background: #00a8ff;
- display: flex;
- margin: 0px 2px 0px 2px;
- box-shadow: 1px 1px 4px black;
-} 
+  min-height: 450px;
+  background-image: url('../pc_01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0px 2px 0px 2px;
+  box-shadow: 1px 1px 4px black;
+ } 
+  
 footer .boxs{
 width: 350px;
 min-height: 150px;

@@ -21,7 +21,7 @@ aside{
  padding: 5px;
 }
 div.titulo-principal{
-  background-image: url('../imagens/Oppo-magvooc--696x392.webp');
+  background-image: url('../pc_01.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
@@ -34,16 +34,16 @@ div.titulo-principal{
 div.titulo-principal h1{
   color: #f8f9fa;
   font-family: Arial, sans-serif;
-  font-size: 3vw;
+  font-size: 3,4vw;
   font-weight: 800;
   margin-top: -1px;
   margin-left: 5px;
   padding-bottom: 20px;
 }
 div.titulo-principal h5{
- color: #f8f9fa;
+ color:#fd7e14;
  font-family: Arial, sans-serif;
- font-size: 2vw;
+ font-size: 3,3vw;
  font-weight: 800;
  margin: 5px;
  margin-top: -44px;
@@ -52,10 +52,33 @@ div.menu-principal{
 display: block;
  margin-top: -42%;
 padding: 5px;
-background-color: blue;
+background-color: rgba(0, 0, 255, 0.533);
 height: 120px;
 box-shadow: 0px 0px 4px black;
 border-radius: 10px 10px 0px 0px;
+}
+nav.menu-suporte{
+  display: block;
+  box-sizing: border-box;
+}
+nav.menu-suporte ul{
+  list-style: none;
+  text-transform: uppercase;
+}
+nav.menu-suporte li{
+   display: inline-block;
+   margin-left: 8px;
+   margin-top: -15px;
+   color: white;
+   font-weight: 900;
+   font-family: Verdana, sans-serif;
+   transition: transform all 0.2s ease;
+}
+ nav.menu-suporte ul li:hover{
+  color: yellow;
+  transform: scale(1.5);
+
+ 
 }
 
 div.menu-principal,div.button  a{
@@ -103,7 +126,8 @@ div.button {
 
 
 .log1{
-  background-color: rgb(18, 245, 18);
+  background-color:  rgb(53, 244, 0);
+  box-shadow: 2px 2px 5px rgb(7, 255, 7);
 
 }
  .log1:hover{
@@ -128,6 +152,7 @@ div.button {
 
 .log2{
   background-color: white;
+  box-shadow: 2px 2px 5px black;
 
 }
  .log2:hover{
@@ -249,8 +274,10 @@ border-radius: 50px;
 }
 /* configuração para footer */
 footer{
- min-height: 250px;
- background: #00a8ff;
+ min-height: 450px;
+ background-image: url('../pc_01.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
  display: flex;
  margin: 0px 2px 0px 2px;
  box-shadow: 1px 1px 4px black;
@@ -266,7 +293,7 @@ width: 400px;
 .boxs h2{
 font-family: Verdana;
 font-weight: 900;
-color: white;
+color: blue;
 margin-bottom: 10px;
 }
 .boxs ul li{
@@ -274,16 +301,20 @@ margin: 10px 0px;
 list-style: none;
 }
 .boxs ul li a{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 text-align: justify;
 color: rgb(23, 241, 23);
 text-decoration: none;
+transition: transform all 0.2s ease;
 }
 .boxs ul li a:hover{
 color: green;
+text-decoration: underline;
+transform: scale(1.5);
 }
 .boxs p{
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
 width: 250px;
 color: white;
 text-align: justify;
@@ -308,7 +339,7 @@ footer .boxs:nth-child(5) {
  display: flex;
  justify-content: space-between;
  align-items: center;
- background: rgb(4, 4, 153);
+ background:#0d6efd;
  padding: 0px 20px;
  margin: 0px 2px 0px 2px;
  box-shadow: 1px 1px 4px black;

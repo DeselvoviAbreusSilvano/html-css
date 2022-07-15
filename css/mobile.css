@@ -21,7 +21,7 @@ aside{
  padding: 5px;
 }
 div.titulo-principal{
-  background-image: url('../imagens/Oppo-magvooc--696x392.webp');
+  background-image: url('../pc_01.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
@@ -32,21 +32,21 @@ div.titulo-principal{
     margin: 5px;
 }
 div.titulo-principal h1{
-  color: #f8f9fa;
+  color:red;
   font-family: Arial, sans-serif;
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 800;
   margin-top: -1px;
   margin-left: 5px;
   padding-bottom: 20px;
 }
 div.titulo-principal h5{
- color: #f8f9fa;
+ color: red;
  font-family: Arial, sans-serif;
- font-size: 2vw;
+ font-size: 3vw;
  font-weight: 800;
  margin: 5px;
- margin-top: -44px;
+ margin-top: -14px;
 }
 div.menu-principal{
 display: block;
@@ -57,6 +57,38 @@ height: 120px;
 box-shadow: 0px 0px 4px black;
 border-radius: 10px 10px 0px 0px;
 }
+
+nav.menu-suporte{
+  display: block;
+  box-sizing: border-box;
+}
+nav.menu-suporte ul{
+  list-style: none;
+ font-size: 10px;
+}
+nav.menu-suporte li{
+  display: inline-block;
+  margin-left: 8px;
+  margin-top: -15px;
+  color: white;
+  font-weight: 900;
+  font-family: Verdana, sans-serif;
+  transition: transform all 0.2s ease;
+}
+nav.menu-suporte ul li:hover{
+ color: yellow;
+ transform: scale(1.5);
+
+
+}
+
+
+div.menu-principal,div.button  a{
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
 
 div.menu-principal,div.button  a{
   text-align: center;
@@ -143,13 +175,13 @@ header .fundo-administra{
    justify-content: left;
    max-height: 10px;
    position: relative;
-   top: 200px;
+   top: 100px;
    left: 10;
 
 }
 header.cartão-adminstra,.imagen-administra{
-   width: 220px;
-   height: 350px;
+   width: 210px;
+   height: 230px;
    border-radius: 50%;
    padding: 3px;
    background-color: #f8f9fa;
@@ -166,7 +198,7 @@ div.imagenfundo,p.figuras{
  color: #0a58ca;
    font-family:Arial;
    text-align: center;
-   font-size: 13px;
+   font-size: 10px;
    text-indent: 10px;
    line-height: 30px;
    width: 150px;
@@ -249,12 +281,15 @@ border-radius: 50px;
 }
 /* configuração para footer */
 footer{
- min-height: 250px;
- background: #00a8ff;
- display: flex;
- margin: 0px 2px 0px 2px;
- box-shadow: 1px 1px 4px black;
-} 
+  min-height: 450px;
+  background-image: url('../pc_01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0px 2px 0px 2px;
+  box-shadow: 1px 1px 4px black;
+ } 
+  
 footer .boxs{
 width: 350px;
 min-height: 150px;
@@ -266,7 +301,8 @@ width: 400px;
 .boxs h2{
 font-family: Verdana;
 font-weight: 900;
-color: white;
+font-size: 2rem;
+color: red;
 margin-bottom: 10px;
 }
 .boxs ul li{
@@ -285,7 +321,7 @@ color: green;
 .boxs p{
 font-family: Georgia, 'Times New Roman', Times, serif;
 width: 250px;
-color: white;
+color: blue;
 text-align: justify;
 font-size: clamp(1em);
 }
@@ -364,7 +400,7 @@ div.sociais, .desevolve{
  line-height: 40px;
 
  position: relative;
- top: 380px;
+ top: 390px;
  transition: transform 0.2s;
 }
 #Menu-principal ul li:hover{
