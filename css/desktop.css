@@ -557,6 +557,7 @@ div.textos-firmware h2{
 div.textos-firmware p{
   width: 250px;
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
   margin: 5px;
   padding: 5px;
   text-indent: 20px;
@@ -584,6 +585,7 @@ div.titulos-aplicativo h2{
 div.titulos-aplicativo p{
   width: 250px;
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
   margin: 5px;
   padding: 5px;
   text-indent: 20px;
@@ -665,7 +667,7 @@ div.textos-aplicativos h1{
 }
 div.textos-aplicativos p{
  text-align: justify;
- font-family: Arial;
+ font-family: 'Roboto', sans-serif;
  text-indent: 20px;
  line-height: 20px;
  font-size: clamp(1em);
@@ -707,7 +709,7 @@ font-weight: 800;
 }
 div.textos-noticias p{
  text-align: justify;
- font-family: Arial, sans-serif;
+ font-family: 'Roboto', sans-serif;
  text-indent: 10px;
  line-height: 30px;
  font-size: 1em;
@@ -1110,7 +1112,7 @@ div.textos-uteis{
   }
   div.textos-uteis  p{
      width: 270px;
-     font-family: Verdana,Tahoma, sans-serif;
+     font-family: 'Roboto', sans-serif;
      margin-left: 10px;
      margin-right: 10px;
      font-size: 15px;
