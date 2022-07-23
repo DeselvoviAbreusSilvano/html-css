@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
 /* animão para os meu textos  */
 [data-anime]{
   opacity: 0;
@@ -39,11 +40,13 @@ section{
  background-color: #f8f9fa;
  margin: 0px 2px 0px 2px;
  padding: 5px; 
+ font-family: 'Ibarra Real Nova', serif;
 }
 aside{
  background-color: #f8f9fa;
  margin: 0px 2px 0px 2px;
  padding: 5px;
+ font-family: 'Ibarra Real Nova', serif;
 }
 div.titulo-principal{
   background-image: url(../pc_01.jpg);
@@ -54,7 +57,7 @@ div.titulo-principal{
  height: 550px;
  margin: 0;
  padding: 0;
- font-family: 'Roboto', sans-serif;
+ font-family: 'Ibarra Real Nova', serif;
 
 }
 .imagens-loja #berner{
@@ -73,8 +76,7 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 div.titulo-principal h5{
  color:#fd7e14;
- font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
+ font-family: 'Ibarra Real Nova', serif;
  font-size: 3,3vw;
  font-weight: 800;
  margin: 5px;
@@ -96,6 +98,7 @@ nav.menu-suporte{
 nav.menu-suporte ul{
   list-style: none;
   text-transform: uppercase;
+  font-family: 'Ibarra Real Nova', serif;
 }
 nav.menu-suporte li{
    display: inline-block;
@@ -116,7 +119,7 @@ nav.menu-suporte li{
 div.menu-principal,div.button  a{
   text-align: center;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 div.button {
@@ -124,7 +127,7 @@ div.button {
   align-items: center;
   justify-content: right;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   margin-top:30px;
   
 }
@@ -202,7 +205,7 @@ header .fundo-administra{
    position: relative;
    top: 240px;
    left: 10;
-
+   font-family: 'Ibarra Real Nova', serif;
 }
 header.cartão-adminstra,.imagen-administra{
    width: 220px;
@@ -273,6 +276,7 @@ div.box-pesquisa{
  background-color: white;
  border-radius: 100px;
  box-shadow: 0px 0px 4px #0dcaf0;
+ font-family: 'Ibarra Real Nova', serif;
 }
 .formas{
 display: block;
@@ -376,6 +380,7 @@ footer .boxs:nth-child(5) {
  padding: 0px 20px;
  margin: 0px 2px 0px 2px;
  box-shadow: 1px 1px 4px black;
+ font-family: 'Ibarra Real Nova', serif;
 }
 .footer h2{
   font-family: 'Roboto Condensed', sans-serif;
@@ -448,6 +453,7 @@ div.elementos-footer, .termos{
   outline: none;
   border: #0dcaf0;
   box-shadow: 0px 0px 4px #0dcaf0;
+  font-family: 'Ibarra Real Nova', serif;
  
 }
 
@@ -510,8 +516,7 @@ div.checarbox{
  width: 115px;
  height: 40px;
  display:inline-block;
- font-family: 'Lora', serif;
-font-family: 'Roboto', sans-serif;
+ font-family: 'Ibarra Real Nova', serif;
  text-transform: uppercase;
  text-align: center;
  font-size: 12px;
@@ -551,6 +556,7 @@ font-family: 'Roboto', sans-serif;
 
 #Menu-principal ul li:hover > ul{
   display: block;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 
@@ -595,6 +601,7 @@ div.playstor{
  animation-duration: 6s;
  animation-delay: 2s;
  animation-iteration-count: 3;
+ font-family: 'Ibarra Real Nova', serif;
 }
 @keyframes play{
  0%{background-color: rgb(14, 247, 14) ; width: 100%;}
@@ -625,6 +632,7 @@ margin-left: 10px;
  font-weight: 900;
  font-size: 10px;
  color: red;
+ font-family: 'Ibarra Real Nova', serif;
 }
 
 div.Firmware-principal{
@@ -700,36 +708,33 @@ div.titulos-aplicativo{
  background-color: #198754;
  border-radius: 10px 10px 0px 0px ;
  height: 778px;
+ font-family: 'Ibarra Real Nova', serif;
 }
 div.titulos-aplicativo h1{
    color: white;
    font-family: Verdana, Arial;
-   font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
+   font-family: 'Ibarra Real Nova', serif;
    text-align: center;
 }
 div.titulos-aplicativo h2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   margin: 20px;
 }
 div.titulos-aplicativo p{
   width: 250px;
   text-align: justify;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   margin: 5px;
   padding: 5px;
   text-indent: 20px;
-  font-family: Arial;
   font-size: clamp(1em);
 }
 div.link-button{
  display: flex;
  align-items: center;
  justify-content: center;
- text-align: center;
- font-family: Arial, sans-serif;
+ text-align: center; 
+ font-family: 'Ibarra Real Nova', serif; 
  background-color: #dc3545;
  color: white;
  margin-top: 20px;
@@ -770,21 +775,20 @@ div.googleplay h1, h2{
  color: #00a8ff;
  font-size: 2vw;
  margin: 5px;
- font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
- 
+ font-family: 'Ibarra Real Nova', serif;
 }
 div.googleplay p{
  text-align: justify;
  text-indent: 20px;
  line-height: 20px;
  font-size: clamp(1em);
- font-family: Arial;
+ font-family: 'Ibarra Real Nova', serif;
  margin: 5px;
  
 }
 div.lojas-principal{
    display: flex;
+   font-family: 'Ibarra Real Nova', serif;
 }
 div.textos-aplicativos{
  display: flex;
@@ -795,16 +799,13 @@ div.textos-aplicativos{
 div.textos-aplicativos h1{
   color: green;
   margin: 10px;
-  font-family: Arial, sans-serif;
-  font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   font-weight: 900;
   font-size: 2vw;
 }
 div.textos-aplicativos p{
  text-align: justify;
- font-family: 'Lora', serif;
-font-family: 'Roboto', sans-serif;
+ font-family: 'Ibarra Real Nova', serif;
  text-indent: 20px;
  line-height: 20px;
  font-size: clamp(1em);
@@ -812,6 +813,7 @@ font-family: 'Roboto', sans-serif;
   }
   div.paragrafos1{
     margin:20px;
+    font-family: 'Ibarra Real Nova', serif;
   }
 div.imagens-aplictivos{
  display: flex;
@@ -822,6 +824,7 @@ div.imagens-aplictivos img{
   box-shadow: 0px 0px 4px black;
   border: 1px solid #00a8ff;
   margin: 10px;
+  font-family: 'Ibarra Real Nova', serif;
 }
 div.lojas-principal{
  display: flex;
@@ -832,6 +835,7 @@ div.lojas-principal{
 div.Noticias{
  display: table;
  margin: 5px;
+ font-family: 'Ibarra Real Nova', serif;
 }
 div.textos-noticias{
  display: table-cell;
@@ -841,14 +845,11 @@ div.textos-noticias{
 div.textos-noticias h1{
 color: #0dcaf0;
 text-align: center;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Ibarra Real Nova', serif; 
 font-weight: 800;
 }
 div.textos-noticias p{
  text-align: justify;
- font-family: 'Roboto', sans-serif;
  font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
  text-indent: 10px;
@@ -879,8 +880,6 @@ font-family: 'Roboto', sans-serif;
 div.lojas-principal h1{
  color: #00a8ff;
  text-align: center;
- font-family: verdana, sans-serif;
- font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
  font-weight: 900;
 }
@@ -916,15 +915,14 @@ div.caixas-publicidade h1{
   background-color: blue;
   border-radius: 10px 10px 0px 0px;
   box-shadow: 0px 0px 5px black;
-  font-family: Arial, sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
   color: white;
   text-align: center;
   font-size: 15px;
 }
 
 div.caixas-publicidade h2{
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Ibarra Real Nova', serif;
  color: red;
  font-size: 1.3vw;
  text-align: center;
@@ -937,7 +935,7 @@ div.link-caixas{
 div.link-caixas li{
  margin: 10px;
  font-size: 1vw;
- font-family: Arial;
+ font-family: 'Ibarra Real Nova', serif;
  list-style: none;
  font-weight: 900;
  text-align: justify;
@@ -1213,10 +1211,12 @@ div.Menu-caixas{
 }
   div.todos-uteis{
    display: table;
+   font-family: 'Ibarra Real Nova', serif;
  }
  div.link-uteis{
    display: table-cell;
    margin-left: 10px;
+   font-family: 'Ibarra Real Nova', serif;
  }
 div.textos-uteis{
  display: table-cell;
@@ -1280,7 +1280,7 @@ div#Lauytes{
 
 div#Lauytes h1{
  color: blue;
- font-family: Arial;
+ font-family: 'Ibarra Real Nova', serif;
  text-transform: uppercase;
 }
 
@@ -1337,6 +1337,7 @@ table{
  display: block;
  padding: 10px;
  background-color: blue;
+ font-family: 'Ibarra Real Nova', serif;
 }
 .titulo-tabela .titulo-preço{
  display: block;
@@ -1344,6 +1345,7 @@ table{
   font-size: 1.3em;
   letter-spacing: 1.4px;
   color: #f8f9fa;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 table tbody tr:nth-child(even){
