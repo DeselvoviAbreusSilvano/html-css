@@ -2,13 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+/* animão para os meu textos  */
+[data-anime]{
+  opacity: 0;
+  transition: 2s;
+}
+[data-anime="down"]{
+  transform: translate3d(0,-100%,0);
+}
+[data-anime="up"]{
+  transform: translate3d(0,100%,0);
+}
+[data-anime="left"]{
+  transform: translate3d(-100%,0,0);
+}
+[data-anime="right"]{
+  transform: translate3d(50px,0,0);
+}
+[data-anime].animação{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
 body{
   background-color: white;
  margin: 0;
  padding: 0;
    
 }
-header{
+header#cabeçalho{
   background-color: #f8f9fa;
   margin: 0px 2px 0px 2px;
   padding-bottom: 37%;
@@ -24,10 +46,15 @@ aside{
  padding: 5px;
 }
 div.titulo-principal{
-  background-image: url('../pc_01.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 550px;
+  background-image: url(../pc_01.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ width: 100%;
+ height: 550px;
+ margin: 0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif;
 
 }
 .imagens-loja #berner{
@@ -173,7 +200,7 @@ header .fundo-administra{
    justify-content: left;
    max-height: 10px;
    position: relative;
-   top: 200px;
+   top: 240px;
    left: 10;
 
 }
@@ -279,7 +306,7 @@ border-radius: 50px;
 }
 /* configuração para footer */
 footer{
- min-height: 450px;
+ min-height: 650px;
  background-image: url('../pc_01.jpg');
  background-size: cover;
  background-repeat: no-repeat;
@@ -296,7 +323,6 @@ footer .boxs:nth-child(5){
 width: 400px;
 }
 .boxs h2{
-font-family: Verdana;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 font-weight: 900;
@@ -308,7 +334,7 @@ margin: 10px 0px;
 list-style: none;
 }
 .boxs ul li a{
-font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 text-align: justify;
 color: rgb(23, 241, 23);
 text-decoration: none;
@@ -320,7 +346,7 @@ text-decoration: underline;
 transform: scale(1.5);
 }
 .boxs p{
-font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 font-weight: 500;
 width: 250px;
 color: white;
@@ -352,7 +378,7 @@ footer .boxs:nth-child(5) {
  box-shadow: 1px 1px 4px black;
 }
 .footer h2{
- font-family: Verdana;
+  font-family: 'Roboto Condensed', sans-serif;
  font-weight: 900;
  color: white;
 }
@@ -385,10 +411,100 @@ div.sociais, .desevolve{
  font-size: 1.5rem;
  transition: color .3s linear;
 }
+div.todas-notificação{
+  display: block;
+  background-color: transparent;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px #f8f9fa;
+  margin: 10px;
+}
+div.todas-notificação h4{
+   text-align: center;
+   font-weight: 500;
+   color: blue;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+div.elementos-footer, .termos{
+  font-size: 12px;
+}
+ #telefone-footer{
+  margin: 5px;
+  padding: 5px;
+  border: none;
+}
+#telefone-footer:focus{
+  outline: none;
+  border: #0dcaf0;
+  box-shadow: 0px 0px 4px #0dcaf0;
+ 
+}
+
+ #eletronicos-footer{
+  margin: 5px;
+  padding: 5px;
+  border: none;
+}
+#eletronicos-footer:focus{
+  outline: none;
+  border: #0dcaf0;
+  box-shadow: 0px 0px 4px #0dcaf0;
+ 
+}
+
+ #textos-footer{
+   width: 200px;
+  height: 80px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+}
+#textos-footer:focus{
+  outline: none;
+  border: #0dcaf0;
+  box-shadow: 0px 0px 4px #0dcaf0;
+}
+div.Notificação-footer,.elementos-footer{
+  margin: 5px;
+  padding: 5px;
+}
+
+.comentario-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enviar-comentario{
+  width: 100px;
+  height: 20px;
+  border: none;
+  background-color: #f8f9fa;
+  color: #0dcaf0;
+}
+.enviar-comentario:focus{
+  outline: none;
+  border: #0dcaf0;
+  box-shadow: 0px 0px 4px #0dcaf0;
+}
+
+div.checarbox{
+  width: 50px;
+  height: 50px;
+}
+ #checar-footer{
+   width: 20px;
+   height: 20px;
+   transition: transform 0.5s;
+}
+#checar-footer:checked{
+  background-color: #198754;
+  transform: rotateY(360deg);
+}
+
+
 /* Configuração para o Menu */
 #Menu-principal ul li{
  background-color: #0dcaf0;
- color: white;
+ color: #f8f9fa;
  box-shadow: 0px 0px 4px blue;
  float: left;
  width: 115px;
@@ -803,6 +919,7 @@ div.caixas-publicidade h1{
   font-family: Arial, sans-serif;
   color: white;
   text-align: center;
+  font-size: 15px;
 }
 
 div.caixas-publicidade h2{
@@ -1094,49 +1211,7 @@ div.indice a:hover{
 div.Menu-caixas{
  margin-left: -5px;
 }
-#menu-google{
- margin: 5px;
- padding-bottom: 35%;
-}
-
-#menu-google ul li{
- background-color: #00a8ff;
- box-shadow: 0px 0px 5px #00a8ff;
- color: white;
- width: 120px;
- height: 40px;
- line-height: 40px;
- font-size: 1.3vw;
- font-family: Arial;
- list-style: none;
- font-weight: 900;
- text-align: justify;
- float: left;
- cursor: pointer;
- transition: all 0.2s ease-out;
-}
-#menu-google li:hover{
- background-color: blue;
- color: white;
- box-shadow: 0px 0px 5px #00a8ff;
- padding: 5px;
-}
-#menu-google ul ul{
- display: none;
- 
- 
-}
-#menu-google ul ul li{
- background-color: rgba(0, 0, 0, 0.597);
- width: 200px;
- font-size: 12px;
-}
-
-#menu-google ul li:hover > ul{
- display: block;
-}
- 
- div.todos-uteis{
+  div.todos-uteis{
    display: table;
  }
  div.link-uteis{
@@ -1243,4 +1318,54 @@ div.Animação-caixa{
    0% { opacity: 1;}
    50% { opacity: 0.2;}
    100% { opacity: 1;}
+}
+/* configuração para o minha tabela */
+div.todas-tabelas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table{
+ display: block;
+ background-color: #f8f9fa;
+ box-shadow: 0px 0px 5px black;
+ border-collapse: collapse;
+ max-height: 400px;
+ overflow-x: hidden;
+}
+.titulo-tabela{
+ display: block;
+ padding: 10px;
+ background-color: blue;
+}
+.titulo-tabela .titulo-preço{
+ display: block;
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: 1.4px;
+  color: #f8f9fa;
+}
+
+table tbody tr:nth-child(even){
+ background-color: #adb5bd;
+}
+table thead{
+ background-color: blue;
+ color: #f8f9fa;
+ font-family: 'Robote', sans-serif;
+ font-size: 15px;
+ font-weight: 800;
+}
+table thead tr th{
+ text-align: left;
+ color: #f8f9fa;
+
+}
+table th, table td{
+padding: 15px;
+border: 1px solid #0dcaf0;
+text-align: center;
+font-family: 'Robote',sans-serif;
+font-weight: 600;
+max-height: 150px;
 }
